@@ -106,7 +106,7 @@ $privateChannels: ":is(.privateChannels_f0963d, .privateChannelsHeaderContainer_
 $profileBadges: '.profileBadges_f89da9';
 $profileCustomizationPreview: ":is(.profileCustomizationPreviewWithoutTheme_ab876d, .profileCustomizationPreview_ab876d, .profileCustomizationPreviewWithTheme_ab876d)";
 $profileCustomizationSection: '.profileCustomizationSection_bad983';
-$profilePanel: '[class*="profilePanel"]';
+$profilePanel: '[class*="userPanelOuter"]';
 $profilePanelConnections: '[class*="profilePanelConnections"]';
 $pronouns: ":is(.pronouns_c9ccf6, .pronouns_afed89)";
 $queryContainer: '[class*="queryContainer"]';

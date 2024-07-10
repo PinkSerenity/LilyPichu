@@ -1,37 +1,38 @@
 name: Release
 
 on:
-  push:
-    tags:
-      - "v*"
+  workflow_dispatch
 
 jobs:
-  release:
-    name: Release
+  build_css:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
-      - name: Check out Git repository
+      - name: Checkout source Git branch
         uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
         with:
-          node-version: 18
+            ref: main
 
-      - uses: pnpm/action-setup@v2
+      - name: Compile CSS from SCSS files
+        uses: gha-utilities/sass-build@v0.6.0
         with:
-          version: latest
+          source: lilypichu.scss
+          destination: lilypichu.theme.css
 
-      - name: Install Node.js dependencies
-        run: pnpm install
-
-      - name: Build TypeScript and bundle into asar
-        run: pnpm run bundle
-
-      - uses: ncipollo/release-action@v1
+      - name: Checkout destination Git branch
+        uses: actions/checkout@v2
         with:
-          artifacts: "bundle/*"
-          makeLatest: true
+            ref: main
+            fetch-depth: 1
+
+      - name: Add and Commit changes to pr-pages branch
+        run: |
+          git config --local user.email '41524896+PinkSerenity@users.noreply.github.com'
+          git config --local user.name 'Pink Serenity'
+          git commit -m 'Updates compiled CSS files'
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main

@@ -1,22 +1,22 @@
 // the following variables are generated - DO NOT EDIT
-$accountProfileCard: '.accountProfileCard_b69b77';
-$accountProfilePopoutWrapper: '[class*="accountProfilePopoutWrapper"]';
+$accountProfileCard: '[class*="accountProfileCard_"];
+$accountProfilePopoutWrapper: '[class*="accountProfilePopoutWrapper_"]';
 $actionButton: ":is(.actionButton_e4010c, .actionButton_e01b91)";
 $activity: ":is(.activity_a31c43, .activityText_a31c43, .activityEmoji_a31c43, .activityUserPopoutV2_d5089b, .activity_e36233, .activityDetails_d5089b, .activity_c91bad, .activityText_c91bad, .activity_f7ebfd, .activitySection_cd82a7, .activitySectionAssets_cd82a7, .activityCharacterWumpus_dfbe6b, .activityCharacterPhibi_dfbe6b)";
 $activityProfileV2: '[class*="activityProfileV2"]';
 $anchor: ":is(.anchor_af404b, .anchorUnderlineOnHover_af404b)";
-$answer: '.answer_b0286e';
+$answer: '[class*="answer_"];
 $app: ":is(.appMount_ea7e65, .appAsidePanelWrapper_bd26cc, .app_bd26cc, .app_a01fb1, .wrapper_fea3ef, .wrapper_fd07a3, .listItemWrapper_dfb2f8, .wrapper_c5f96a, .wrapper_f90abb, .childWrapper_f90abb, .childWrapperNoHoverBg_f90abb, .wrapper_bc7085, .folderIconWrapper_bc7085, .expandedFolderIconWrapper_bc7085, .wrapper_b7c66a, .folderEndWrapper_b7c66a, .closedFolderIconWrapper_bc7085, .wrapperSimple_c5f96a, .wrapper_d8bfb3, .wrapper_a08117, .wrapperCommon_a08117, .wrapper_adcaac, .avatarWrapper_b2ca13, .wrapper_c51b4e, .iconWrapper_e44302, .titleWrapper_e44302, .messagesWrapper_e2e187, .wrapper_cdfd51, .wrapper_b211c6, .wrapper_ec86aa, .embedWrapper_b558d0, .imageWrapper_d4597d, .clickableWrapper_d4597d, .wrapper_bf1b19, .wrapper_ef319f, .attachWrapper_f298d4, .buttonWrapper_cecf00, .cooldownWrapper_d7ebeb, .wrapper_cd22e7, .swipeWrapper_cd22e7, .app-focused, .outerWrapper_fe2299, .wrapper_fe2299, .wrapper_efd8e6, .wrapper_ba23fe, .wrapper_c9d951, .wrapper_a69fe5, .wrapper_e06857, .itemWrapper_fe2299, .wrapper_e18e73, .infoWrapper_e18e73, .usageWrapper_e18e73, .bannerSVGWrapper_b32cc2, .avatarWrapperNormal_f89da9, .avatarWrapper_f89da9, .memberSinceWrapper_b06bc5, .inputWrapper_f8bc55, .wrapperPaused_f316dd, .wrapper_f316dd, .wrapperMediaMosaic_f316dd, .iconWrapper_b26897, .appLauncherOnboardingCommandName_ec86aa, .appsIcon_ec86aa, .richEmbedWrapper_b558d0, .applicationInstallButtonContent_cd1424, .applicationInstallButtonText_cd1424, .buttonsWrapper_bf8eca, .applicationInstallButton_ec3b75, .wrapper_c6ee36, .bodyWrapper_c6ee36, .emojiPickerListWrapper_c6ee36, .listWrapper_a3bc57, .textWrapper_c3120f, .wrapper_cd82a7, .copiableWrapper_e3203d, .childWrapper_e3203d, .hoverIconWrapper_ab876d, .wrapper_f6639d, .imageUploaderIconWrapper_de76e4, .inputWrapper_d7e343, .imageWrapperBackground_d4597d, .wrapper_c8da25, .iconWrapperActive_c8da25, .iconWrapper_c8da25, .spinnerWrapper_b7c924, .wrapperPlaying_f316dd, .mediaBarWrapper_f7877e, .volumeSliderWrapper_f316dd, .mediaBarWrapperVolume_f7877e, .wrapperControlsHidden_f316dd, .drawerSizingWrapper_af5dbb, .contentWrapper_af5dbb, .emojiPickerHasTabWrapper_c6ee36, .wrapper_d8cdac, .wrapper_da9f92, .listWrapper_d8cdac, .wrapper_de4721, .assetWrapper_cb3343, .assetWrapperMasked_cb3343)";
 $autocomplete: ":is(.autocomplete_f23da8, .autocompleteInner_f23da8, .autocompleteRowVertical_f23da8, .autocompleteRow_f23da8, .autocompleteRowHeading_f23da8, .autocompleteRowSubheading_f23da8, .autocompleteRowContentSecondary_f23da8, .autocompleteQuerySymbol_f4e139)";
 $avatar: ":is(.avatarWrapper_b2ca13, .avatar_b2ca13, .avatarStack_c51b4e, .avatar_c51b4e, .avatar_b211c6, .avatar_ec86aa, .avatarDecoration_ec86aa, .avatarContainer_c47562, .avatar_c47562, .avatar_e9f61e, .avatarDecoration_c51b4e, .avatarWrapperNormal_f89da9, .avatarWrapper_f89da9, .avatarPositionNormal_f89da9, .avatarHoverTarget_f89da9, .avatarHint_f89da9, .avatarHintInner_f89da9, .avatarAndTextContainer_f005b2, .avatars_ccc074, .avatar_ccc074, .avatar_ec3b75, .vc-typing-indicator-avatars, .avatarWithText_c91bad, .avatar_f9647d, .avatar_a7d72e, .avatar_f3939d, .avatar_b69b77, .avatarUploaderNormal_ab876d, .avatarUploader_ab876d, .avatarUploaderInner_ab876d, .avatarUploaderPremium_ab876d, .avatarContainer_dc0b54, .avatar_dc0b54)";
 $avatarHint: ":is(.avatarHint_f89da9, .avatarHintInner_f89da9)";
 $avatarUploader: ":is(.avatarUploaderNormal_ab876d, .avatarUploader_ab876d, .avatarUploaderInner_ab876d, .avatarUploaderPremium_ab876d)";
 $avatarWrapper: ":is(.avatarWrapper_b2ca13, .avatarWrapperNormal_f89da9, .avatarWrapper_f89da9)";
-$avatarWrapperNormal: '.avatarWrapperNormal_f89da9';
+$avatarWrapperNormal: '[class*="avatarWrapperNormal_"];;
 $background: ":is(.background_ae3c77, .background_b69b77, .background_c6d722, .custom-theme-background)";
 $badgeList: ":is(.badgeList_ec3b75, .badgeList_b69b77)";
 $banner: ":is(.bannerImage_fd6364, .bannerImg_fd6364, .bannerSVGWrapper_b32cc2, .banner_c3e427, .bannerPremium_c3e427, .bannerNormal_ab876d, .banner_ab876d, .bannerNitroUpsell_ab876d, .bannerNitroUpsellText_ab876d, .bannerUploader_ab876d, .bannerUploaderInnerSquare_ab876d)";
-$bannerSVGWrapper: '.bannerSVGWrapper_b32cc2';
+$bannerSVGWrapper: '[class*="bannerSVGWrapper_"];;
 $baseLayout: '.baseLayout_bad983';
 $bg: ":is(.bg_d4b6c5, .bgScale_f82cc7)";
 $body: ":is(.body_c4a579, .body_b9fccc, .bodyNormal_d5089b, .body_d5089b, .bodyWrapper_c6ee36, .body_cd82a7, .body_ab876d)";
@@ -106,7 +106,7 @@ $privateChannels: ":is(.privateChannels_f0963d, .privateChannelsHeaderContainer_
 $profileBadges: '.profileBadges_f89da9';
 $profileCustomizationPreview: ":is(.profileCustomizationPreviewWithoutTheme_ab876d, .profileCustomizationPreview_ab876d, .profileCustomizationPreviewWithTheme_ab876d)";
 $profileCustomizationSection: '.profileCustomizationSection_bad983';
-$profilePanel: '[class*="profilePanel"]';
+$profilePanel: '[class*="userPanelOuter"]';
 $profilePanelConnections: '[class*="profilePanelConnections"]';
 $pronouns: ":is(.pronouns_c9ccf6, .pronouns_afed89)";
 $queryContainer: '[class*="queryContainer"]';
@@ -154,8 +154,8 @@ $userInfo: ":is(.userInfoSection_a24910, .userInfoSectionHeader_a24910, .userInf
 $userInfoSection: ":is(.userInfoSection_a24910, .userInfoSectionHeader_a24910)";
 $userPanelInner: '[class*="userPanelInner"]';
 $userPanelOverlayBackground: '[class*="userPanelOverlayBackground"]';
-$userPopoutInner: '.userPopoutInner_c69a7b';
-$userPopoutOuter: '.userPopoutOuter_c69a7b';
+$userPopoutInner: '[class*="userPopoutInner_"];
+$userPopoutOuter: '[class*="userPopoutOuter_"];
 $userPopoutOverlayBackground: '.userPopoutOverlayBackground_c69a7b';
 $userProfileModalOverlayBackground: '.userProfileModalOverlayBackground_c69a7b';
 $userTagNoNickname: '[class*="userTagNoNickname"]';

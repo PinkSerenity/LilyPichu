@@ -22,4 +22,13 @@
     "prettier": "^2.8.7",
     "replugged": "^4.2.3"
   }
+  "pnpm": {
+  "packageExtensions": {
+    "posix": {
+      "optionalDependencies": {
+        "node-gyp": "*"
+      }
+    }
+  }
+}
 }

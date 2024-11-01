@@ -1,7 +1,7 @@
 name: Release
 
 on:
-  workflow_dispatch
+  [workflow_dispatch, push]
 
 jobs:
   build_css:
@@ -17,7 +17,7 @@ jobs:
         uses: gha-utilities/sass-build@v0.6.0
         with:
           source: lilypichu.scss
-          destination: lilypichu.theme.css
+          destination: main.css
 
       - name: Add and Commit changes to pr-pages branch
         uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.

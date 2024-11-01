@@ -17,13 +17,7 @@ jobs:
         uses: gha-utilities/sass-build@v0.6.0
         with:
           source: lilypichu.scss
-          destination: lilypichu.theme.css
-
-      - name: Checkout destination Git branch
-        uses: actions/checkout@v2
-        with:
-            ref: main
-            fetch-depth: 1
+          destination: lilypichu.theme.cs
 
       - name: Add and Commit changes to pr-pages branch
         run: |

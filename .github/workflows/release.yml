@@ -21,9 +21,9 @@ jobs:
 
       - name: Add and Commit changes to pr-pages branch
         run: |
-          git add lilypichu.theme.css
           git config --local user.email '41524896+PinkSerenity@users.noreply.github.com'
-          git config --local user.name 'Pink Serenity'
+          git config --local user.name 'Pink Serenity'          
+          git add lilypichu.theme.css --verbose
           git commit -m 'Updates compiled CSS files'
 
       - name: Push changes

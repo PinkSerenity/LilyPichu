@@ -12,15 +12,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito");
 
 // Donators
-#{selectors.$profileBadges} > :last-child::before,
-#{selectors.$badgeList} > :last-child::before {
+#{selectors-updatesafe.$profileBadges} > :last-child::before,
+#{selectors-updatesafe.$badgeList} > :last-child::before {
 	z-index: 10;
 }
 
 // Right popout
 @media (min-width: 1350px) {
-	#{selectors.$chatContent} + :last-child, // user profile in dms
-	#{selectors.$memberListContainer} { // member list
+	#{selectors-updatesafe.$chatContent} + :last-child, // user profile in dms
+	#{selectors-updatesafe.$memberListContainer} { // member list
 		position: fixed;
 		top: 280px;
 		bottom: 120px;
@@ -28,16 +28,16 @@
 		width: 320px;
 		height: unset;
 	}
-	#{selectors.$tabBody} { // wrapper around friend list in starting screen
+	#{selectors-updatesafe.$tabBody} { // wrapper around friend list in starting screen
 		transform: none;
 	}
 
 	// settings
-	#{selectors.$layers} > #{selectors.$layer}:nth-child(2) {
+	#{selectors-updatesafe.$layers} > #{selectors-updatesafe.$layer}:nth-child(2) {
 		margin-right: 450px;
 	}
 
-	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container} {
+	#{selectors-updatesafe.$layers} > #{selectors-updatesafe.$layer} > #{selectors-updatesafe.$container} {
 		margin-right: 450px;
 		// Basic right popout when there's nothing
 		&::after {
@@ -73,14 +73,14 @@
 	}
 
 	// Adding space for right popout
-	#{selectors.$guilds} + :nth-child(2) {
+	#{selectors-updatesafe.$guilds} + :nth-child(2) {
 		margin-right: 450px;
 		border-radius: 0 var(--border-radius) var(--border-radius) 0;
 	}
 
 
 	// User area
-	#{selectors.$panels} > :last-child {
+	#{selectors-updatesafe.$panels} > :last-child {
 		position: fixed;
 		display: flex;
 		width: 305px;
@@ -91,7 +91,7 @@
 		background-color: var(--background-primary);
 		border-radius: var(--border-radius);
 
-		#{selectors.$avatarWrapper} {
+		#{selectors-updatesafe.$avatarWrapper} {
 			border-radius: var(--border-radius);
 		}
 	}
@@ -101,15 +101,15 @@
 		overflow: visible;
 	}
 
-	#{selectors.$membersWrap} > #{selectors.$members} {
+	#{selectors-updatesafe.$membersWrap} > #{selectors-updatesafe.$members} {
 		width: 100%;
 		background-color: var(--background-primary);
 
-		& > #{selectors.$content} {
+		& > #{selectors-updatesafe.$content} {
 			min-height: 1000px;
 			background-color: transparent;
 		}
-		[role='list'] > div#{selectors.$member} {
+		[role='list'] > div#{selectors-updatesafe.$member} {
 			max-width: 300px;
 			border-radius: var(--border-radius);
 			background-color: var(--background-primary);

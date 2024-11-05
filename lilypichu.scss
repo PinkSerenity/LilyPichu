@@ -27,6 +27,8 @@
 		right: 60px;
 		width: 320px;
 		height: unset;
+	}
+	#{selectors.$userPanelInner} {
 		border-radius: var(--border-radius);
 	}
 	#{selectors.$tabBody} { // wrapper around friend list in starting screen

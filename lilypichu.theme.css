@@ -1,7 +1,7 @@
 /**
-* @name LilyPichu Fork
+* @name LilyPichu+
 * @author Pink Serenity
-* @description A theme based on @Melonturtle_ stream design
+* @description A theme based on @Melonturtle_ stream design; Original by NYRI4
 * @invite rtBQX5D3bD
 * @version 1.0
 */
@@ -76,11 +76,11 @@
 }
 
 /* Buttons */
-.lookFilled-1H2Jvj {
+.lookFilled_dd4f85 {
   background-color: #c5536c !important;
 }
-.lookFilled-1H2Jvj:active,
-.lookFilled-1H2Jvj:hover {
+.lookFilled_dd4f85:active,
+.lookFilled_dd4f85:hover {
   background-color: #b64a61 !important;
 }
 .lookOutlined-3yKVGo:not(.colorWhite-1H92hK) {
@@ -136,11 +136,11 @@
 }
 
 /* Buttons */
-.lookFilled-1H2Jvj {
+.lookFilled_dd4f85 {
   background-color: #c5536c !important;
 }
-.lookFilled-1H2Jvj:active,
-.lookFilled-1H2Jvj:hover {
+.lookFilled_dd4f85:active,
+.lookFilled_dd4f85:hover {
   background-color: #b64a61 !important;
 }
 .lookOutlined-3yKVGo:not(.colorWhite-1H92hK) {

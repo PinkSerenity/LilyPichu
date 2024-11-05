@@ -1,7 +1,7 @@
 @use "lilypichu.scss";
 
 // Remove decorations
-@import url("https://nyri4.github.io/LilyPichu/stuff/overlay.css");
+@import url("https://raw.githubusercontent.com/PinkSerenity/LilyPichu/refs/heads/main/stuff/overlay.css");
 
 :root {
   // --- User variables ---
@@ -17,17 +17,17 @@
   // Border-radius for the whole theme
   --border-radius: 20px;
 
-  .colorDefault__0b482.focused__27621,
-  .colorDefault__0b482:active:not(.hideInteraction__2790e) {
+  .colorDefault_d90b3d.focused_d90b3d,
+  .colorDefault_d90b3d:active:not(.hideInteraction_d90b3d) {
     background-color: var(--background-modifier-hover) !important;
   }
 
   // Buttons
-  .lookFilled__19298 {
+  .lookFilled_dd4f85 {
     background-color: #c5536c !important;
   }
-  .lookFilled__19298:active,
-  .lookFilled__19298:hover {
+  .lookFilled_dd4f85:active,
+  .lookFilled_dd4f85:hover {
     background-color: #b64a61 !important;
   }
   .lookOutlined-3yKVGo:not(.colorWhite-1H92hK) {
@@ -36,8 +36,8 @@
   }
 
   // Hover background
-  .colorDefault__0b482.focused__27621,
-  .colorDefault__0b482:active:not(.hideInteraction__2790e) {
+  .colorDefault_d90b3d.focused_d90b3d,
+  .colorDefault_d90b3d:active:not(.hideInteraction_d90b3d) {
     color: var(--interactive-normal);
   }
 }

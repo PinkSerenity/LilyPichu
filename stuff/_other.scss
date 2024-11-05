@@ -18,7 +18,7 @@
 	}
 
 	// Windows button
-	.winButton__88672 {
+	.winButton_a934d8 {
 		background-color: var(--background-primary);
 
 		&:last-child {
@@ -30,50 +30,50 @@
 	button,
 	input,
 	textarea,
-	.menu_dc52c6 { // TODO: what was this?
+	.menu_d90b3d { // TODO: what was this?
 		border-radius: var(--border-radius) !important;
 	}
 
 	// -- Better menus --
-	.menu_dc52c6 { // TODO: what was this?
+	.menu_d90b3d { // TODO: what was this?
 		overflow: hidden;
 	}
 
-	.scroller__750f5 { // TODO: what was this? (+everything inside)
+	.scroller_d90b3d { // TODO: what was this? (+everything inside)
 		padding: 0;
 
 		&::-webkit-scrollbar,
-		.separator__18122 {
+		.separator_d90b3d {
 			display: none;
 		}
-		.item__183e8 {
+		.item_d90b3d {
 			flex-direction: row-reverse;
 			padding: 10px 10px 10px 13px;
 			margin: 0;
 			transition: 0.15s;
 			border-radius: 0;
 
-			.hintContainer__79e5e {
+			.hintContainer_d90b3d {
 				margin: 0 8px 0 0;
 			}
 
-			.iconContainer__829e7,
-			.imageContainer_ea60f4 {
+			.iconContainer_d90b3d,
+			.imageContainer_d90b3d {
 				margin: 0 8px 0 0;
 			}
 		}
 
 		// Submenu
-		.submenuPaddingContainer__12a9d {
+		.submenuPaddingContainer_d90b3d {
 			margin: 0 -8px;
 		}
 	}
 
 	// Modals
 	#{selectors.$layer} #{selectors.$focusLock} {
-		.modal__060da, // TODO: what were these? 
+		.modal_c97cbd, // TODO: what were these? 
 		& > #{selectors.$root},
-		.uploadModal_eae2a0 { // TODO: what were these?
+		.uploadModal_f82cc7 { // TODO: what were these?
 			border-radius: var(--border-radius);
 			box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 			// Custom status modal
@@ -112,12 +112,12 @@
 	// TODO: everything below (200 lines)
 	
 	// Delete Discord wordmark
-	.titleBar__01af6 .wordmark__0d178 {
+	.titleBar_a934d8 .wordmark_a934d8 {
 		display: none;
 	}
 
 	// Colored emoji
-	.sprite__294b3 {
+	.sprite_d91a75 {
 		filter: none !important;
 	}
 
@@ -129,54 +129,54 @@
 	.categoryItem-1QIroW .itemInner-gPkiWb {
 		background-color: transparent;
 	}
-	.pageWrapper_fef757 {
+	.pageWrapper_a3a4ce {
 		background-color: var(--background-primary);
 	}
-	.notice__99c03 {
+	.notice_dd5a33 {
 		border-top-left-radius: 0;
 		background-color: var(--background-tertiary);
 	}
-	.button__671cf:hover {
+	.button_dd5a33:hover {
 		background-color: transparent;
 	}
 	.headerImage-2D5D-v,
-	.card__86773 {
+	.card_e90879 {
 		border-radius: var(--border-radius);
 	}
 
 	// Call tile
-	.tile_a411a4 {
+	.tile_dc5fc4 {
 		background-color: var(--background-secondary-alt);
 		border-radius: var(--border-radius);
 
-		.button__13ec4 {
+		.button_e5cc00 {
 			background-color: var(--background-accent);
 		}
 	}
 
 	// Joining message
-	.contentWrapper__85d37 {
+	.contentWrapper_ed5743 {
 		background: var(--background-secondary);
 	}
 
 	// Keyboard shortcuts
-	.keyboardShortcutsModal__74c71 {
+	.keyboardShortcutsModal_ad95dc {
 		background: var(--background-secondary);
 	}
 
 	// Discord game
-	.scroller__46bcc {
+	.scroller__7dda4 {
 		background: var(--background-primary);
 	}
-	.whyYouMightLikeIt_ad60b9,
-	.content__8af7f,
+	.whyYouMightLikeIt_d6180d,
+	.content_b118d9,
 	.bodySection_ae0d90,
-	.row__80d34 {
+	.row_b4ece4 {
 		background: var(--background-secondary);
 	}
 
 	// Tooltips
-	.toolbar_c7b525 {
+	.toolbar_de3e42 {
 		display: flex !important;
 		background-color: var(--background-secondary-alt);
 
@@ -184,25 +184,25 @@
 			border-top: 8px solid var(--background-secondary-alt);
 		}
 
-		.button__07531 {
+		.button_de3e42 {
 			background-color: transparent !important;
 		}
 	}
 
 	// New community home
-	.header__60bef,
-	.container__10dc7,
-	.emptyPage__3e15d,
-	.pageBody_db54f5,
-	.background_cb0a80,
-	.scrollerContainer_bf5dbd {
+	.header_f1fd9c,
+	.container_f1fd9c,
+	.emptyPage_c6b11b,
+	.pageBody_c2efea,
+	.background_e85cee,
+	.scrollerContainer_c6b11b {
 		background-color: var(--background-primary);
 	}
-	.row__70f4c,
-	.channelRow__96673 {
+	.row_b53f4f,
+	.channelRow_f04d06 {
 		background-color: var(--background-secondary);
 	}
-	.emptyContainer__0cde5 > .emptyIcon__3ebb5 {
+	.emptyContainer_c6b11b > .emptyIcon_c6b11b {
 		& > circle {
 			fill: var(--interactive-normal);
 		}
@@ -211,15 +211,15 @@
 			stroke: var(--background-accent);
 		}
 	}
-	.brand_ce3ecf.item__48dda:active,
-	.brand_ce3ecf.selected__5711d.item__48dda {
+	.brand_a0.item_a0:active,
+	.brand_a0.selected_a0.item_a0 {
 		border-bottom-color: var(--background-accent);
 	}
-	.checkbox_c7f690 {
+	.checkbox_f6cde8 {
 		background-color: var(--background-secondary) !important;
 		border-color: var(--background-accent) !important;
 
-		&.checked__24ad6 {
+		&.checked_f6cde8 {
 			background-color: var(--background-accent) !important;
 
 			& > svg > path {
@@ -232,7 +232,7 @@
 		}
 	}
 
-	.container__871ba.checked__6bdb0 {
+	.container_cebd1c.checked_cebd1c {
 		background-color: var(--background-accent) !important;
 
 		& path {
@@ -241,10 +241,10 @@
 	}
 
 	// Loading screen
-	.ready__61f2f {
+	.ready_e40c16 {
 		display: none;
 
-		& + .text__32559 {
+		& + .text_e40c16 {
 			top: 82px;
 
 			&::before {
@@ -259,7 +259,7 @@
 		}
 	}
 
-	.container__871ba[style*="background-color: var(--green-360)"] {
+	.container_cebd1c[style*="background-color: var(--green-360)"] {
 		background-color: var(--background-accent) !important;
 
 		& path {
@@ -296,7 +296,7 @@
 	}
 
 	@media (min-width: 1350px) {
-		#MemberCount .membersGroup__85843 {
+		#MemberCount .membersGroup_cbd271 {
 			padding-top: 12px;
 		}
 	}
@@ -310,7 +310,7 @@
 		border: none;
 	}
 
-	.vc-settings-tab-bar-item.item__48dda {
+	.vc-settings-tab-bar-item.item_a0 {
 		border-radius: 0 !important;
 	}
 

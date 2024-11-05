@@ -99,16 +99,16 @@
 	}
 
 	// Friend call
-	.nowPlayingColumn_b025fe .scroller__00e7e { // TODO: update
+	.nowPlayingColumn_c2739c .scroller_bf550a { // TODO: update
 		border: none;
 	}
-	.controlButton_ab2899 foreignObject { // TODO: update
+	.controlButton_b6e2f9 foreignObject { // TODO: update
 		mask: none;
 	}
-	.colorable_c84c4c.primaryDark__6b700 { // TODO: update
+	.colorable_ef18ee.primaryDark_ef18ee { // TODO: update
 		background-color: var(--background-primary);
 	}
-	.wrapper_bd2abe { // TODO: update
+	.wrapper_d880dc { // TODO: update
 		background-color: var(--background-tertiary);
 	}
 
@@ -117,10 +117,10 @@
 		#{selectors.$inset} {
 			background-color: var(--background-primary);
 		}
-		.separator_c2ecc6 { // TODO: what was this? cant find any separators?
+		.separator_cd82a7 { // TODO: what was this? cant find any separators?
 			display: none;
 		}
-		.voiceSectionIconWrapper_c50254 {
+		.voiceSectionIconWrapper_cd82a7 {
 			background-color: var(--background-tertiary);
 		}
 		#{selectors.$outer}#{selectors.$interactive}:hover {
@@ -136,11 +136,11 @@
 		}
 	}
 	// Regionnal selector friend call // TODO
-	.quickSelectPopout_c0cf80.regionSelectPopout__0127b {
+	.quickSelectPopout_abbf45.regionSelectPopout_ccb5ca {
 		background-color: var(--background-secondary-alt);
 	}
 
-	.profilePanelConnections__3c232 {
+	.profilePanelConnections_b433b4 {
 		background-color: transparent;
 	}
 }

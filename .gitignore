@@ -2,3 +2,5 @@ prepros.config
 sass.txt
 .prettierignore
 node_modules
+main.css
+stuff/overlay.css

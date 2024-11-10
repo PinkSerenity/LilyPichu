@@ -16,7 +16,7 @@ jobs:
           submodules: true
       
       - name: Make destination directory for compiled CSS
-        run: mkdir -vp /tmp/LilyPichu/
+        run: mkdir -vp /tmp/LilyPichu/stuff
       
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.6.0

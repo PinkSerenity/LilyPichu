@@ -12,18 +12,23 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: main
+          fetch-depth: 10
+          submodules: true
+      
+      - name: Make destination directory for compiled CSS
+        run: mkdir -vp /tmp/LilyPichu/
       
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.6.0
         with:
           source: stuff/overlay.scss
-          destination: /tmp/overlay.css
+          destination: /tmp/LilyPichu/stuff/overlay.css
 
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.6.0
         with:
           source: lilypichu.scss
-          destination: /tmp/main.css
+          destination: /tmp/LilyPichu/main.css
 
       - name: Checkout destination Git branch
         uses: actions/checkout@v2
@@ -33,9 +38,8 @@ jobs:
 
       - name: Move CSS to destination Git branch
         run: |
-          mv /tmp/overlay.css ./stuff/overlay.css
-          mv /tmp/main.css ./main.css
-          
+          mv /tmp/LilyPichu/stuff/overlay.css ./stuff/overlay.css
+          mv /tmp/LilyPichu/main.css ./main.css
 
       - name: Add and Commit changes
         uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.

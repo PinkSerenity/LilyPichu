@@ -17,16 +17,24 @@ jobs:
         uses: gha-utilities/sass-build@v0.6.0
         with:
           source: stuff/overlay.scss
-          destination: stuff/overlay.css
+          destination: /tmp/LilyPichu/stuff/overlay.css
 
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.6.0
         with:
           source: lilypichu.scss
-          destination: main.css
+          destination: /tmp/LilyPichu/main.css
 
-      - name: Switch branch
-        run: git stash -u && git checkout -b release && git checkout stash -- . && ls
+      - name: Checkout target Git branch
+        uses: actions/checkout@v2
+        with:
+          ref: rebase
+
+      - name: Move CSS to target Git branch
+        run: |
+          mv /tmp/LilyPichu/stuff/overlay.css ./stuff/overlay.css
+          mv /tmp/LilyPichu/main.css ./main.css
+          
 
       - name: Add and Commit changes
         uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
@@ -35,4 +43,3 @@ jobs:
           # The message for the commit.
           # Default: 'Commit from GitHub Actions (name of the workflow)'
           message: 'Created release'
-          push: 'origin release --set-upstream --force'

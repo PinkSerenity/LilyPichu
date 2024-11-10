@@ -25,12 +25,13 @@ jobs:
           source: lilypichu.scss
           destination: /tmp/main.css
 
-      - name: Checkout target Git branch
+      - name: Checkout destination Git branch
         uses: actions/checkout@v2
         with:
-          ref: rebase
+            ref: release
+            fetch-depth: 1
 
-      - name: Move CSS to target Git branch
+      - name: Move CSS to destination Git branch
         run: |
           mv /tmp/overlay.css ./stuff/overlay.css
           mv /tmp/main.css ./main.css

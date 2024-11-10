@@ -32,5 +32,4 @@ jobs:
           # The message for the commit.
           # Default: 'Commit from GitHub Actions (name of the workflow)'
           message: 'Created release'
-          new_branch: release
-          pull: '--rebase --autostash'
+          push: 'origin release --set-upstream --force'

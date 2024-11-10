@@ -17,13 +17,13 @@ jobs:
         uses: gha-utilities/sass-build@v0.6.0
         with:
           source: stuff/overlay.scss
-          destination: /tmp/LilyPichu/stuff/overlay.css
+          destination: /tmp/overlay.css
 
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.6.0
         with:
           source: lilypichu.scss
-          destination: /tmp/LilyPichu/main.css
+          destination: /tmp/main.css
 
       - name: Checkout target Git branch
         uses: actions/checkout@v2
@@ -32,8 +32,8 @@ jobs:
 
       - name: Move CSS to target Git branch
         run: |
-          mv /tmp/LilyPichu/stuff/overlay.css ./stuff/overlay.css
-          mv /tmp/LilyPichu/main.css ./main.css
+          mv /tmp/overlay.css ./stuff/overlay.css
+          mv /tmp/main.css ./main.css
           
 
       - name: Add and Commit changes

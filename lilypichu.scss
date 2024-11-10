@@ -21,7 +21,9 @@
 @media (min-width: 1350px) {
 	#{selectors.$content} > #{selectors.$profilePanel}, /* user profile in dms */
 	#{selectors.$memberListContainer}, /* member list */
-	#{selectors.$nowPlayingColumn} { /* friends activity */
+	#{selectors.$nowPlayingColumn}, /* friends activity */
+	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container}::after,
+	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container}::before { /* empty thing */
 		position: fixed;
 		top: 220px;
 		bottom: 85px;
@@ -30,10 +32,14 @@
 	}
 
 	#{selectors.$nowPlayingColumn},
-	#{selectors.$membersWrap} {
+	#{selectors.$membersWrap},
+	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container} {
 		top: 280px;
 		bottom: 120px;
+	}
 
+	#{selectors.$nowPlayingColumn},
+	#{selectors.$membersWrap} {
 		// Header
 		&::before {
 			content: "Member list";
@@ -98,12 +104,9 @@
 		// Basic right popout when there's nothing
 		&::after {
 			content: "Stay comfy";
-			position: fixed;
-			top: 220px;
-			bottom: 85px;
-			right: 60px;
+			top: 280px;
+			bottom: 120px;
 			z-index: -2;
-			width: 320px;
 			background-color: var(--background-primary);
 			text-align: center;
 			display: flex;
@@ -117,9 +120,8 @@
 
 		&::before {
 			content: "";
-			position: fixed;
-			top: 220px;
-			bottom: 85px;
+			top: 280px;
+			bottom: 120px;
 			right: 70px;
 			z-index: -1;
 			width: 300px;

@@ -38,6 +38,7 @@ jobs:
 
       - name: Move CSS to destination Git branch
         run: |
+          mkdir -p ./stuff
           mv /tmp/LilyPichu/stuff/overlay.css ./stuff/overlay.css
           mv /tmp/LilyPichu/main.css ./main.css
 

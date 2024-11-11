@@ -34,7 +34,7 @@
 		height: unset;
 	}
 
-	#{selectors.$userPanelOuter}, 
+	#{selectors.$userPanelInner}, 
 	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container}::after {		
 		border-radius: var(--border-radius);
 	}

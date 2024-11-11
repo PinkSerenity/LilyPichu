@@ -34,7 +34,7 @@
 	}
 
 	#{selectors.$nowPlayingColumn},
-	#{selectors.$membersWrap},
+	#{selectors.$memberListContainer},
 	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container}::after,
 	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container}::before {
 		top: 280px;

@@ -19,8 +19,7 @@
 
 // Right popout
 @media (min-width: 1350px) {
-	#{selectors.$content} > #{selectors.$profilePanel}, /* user profile in dms */
-	#{selectors.$userPanelOuter}, /* also */
+	#{selectors.$userPanelOuter}, /* user profile in dms */
 	#{selectors.$memberListContainer}, /* member list */
 	#{selectors.$nowPlayingColumn}, /* friends activity */
 	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container}::after,
@@ -34,9 +33,7 @@
 	}
 
 	#{selectors.$nowPlayingColumn},
-	#{selectors.$memberListContainer},
-	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container}::after,
-	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container}::before {
+	#{selectors.$memberListContainer} {
 		top: 280px;
 		bottom: 120px;
 	}

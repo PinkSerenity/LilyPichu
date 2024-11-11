@@ -26,7 +26,7 @@
 	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container}::before { /* empty thing */
 		position: fixed;
 		top: 220px;
-		bottom: 120px;
+		bottom: 85px;
 		right: 60px;
 		width: 320px;
 		height: unset;
@@ -35,7 +35,7 @@
 	#{selectors.$nowPlayingColumn},
 	#{selectors.$memberListContainer} {
 		top: 280px;
-		bottom: 155px;
+		bottom: 120px;
 	}
 
 	#{selectors.$nowPlayingColumn},
@@ -138,7 +138,7 @@
 		position: fixed;
 		display: flex;
 		width: 305px;
-		height: 50px;
+		height: 50px !important;
 		bottom: 28px;
 		right: 60px;
 		justify-content: space-between;

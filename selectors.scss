@@ -82,9 +82,9 @@ $list: ":is(.listItem_c96c45, .listItemWrapper_dfb2f8, .vc-membercount-member-li
 $mainCard: '[class*="mainCard"]';
 $member: ":is(.membersWrap_cbd271, .members_cbd271, .vc-membercount-widget, .vc-membercount-member-list, .vc-membercount-online-dot, .vc-membercount-online, .vc-membercount-total-dot, .vc-membercount-total, .membersGroup_cbd271, .member_a31c43, .member_cbd271, .memberInner_a31c43, .memberSinceWrapper_b06bc5, .memberSince_b06bc5, .vc-membercount-tooltip)";
 $memberInner: '.memberInner_a31c43';
+$membersWrap: '.membersWrap_cbd271';
 $memberListContainer: '[class*="chatContent"] + [class*="container"], [class*="chatContent"] + #{$membersWrap}';
 $members: ":is(.membersWrap_cbd271, .members_cbd271, .membersGroup_cbd271)";
-$membersWrap: '.membersWrap_cbd271';
 $messageContent: '.messageContent_f9f2ca';
 $message_: ":is(.message_d5deea, .message_ddc613)";
 $messagesPopoutWrap: '[class*="messagesPopoutWrap"]';

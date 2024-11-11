@@ -28,7 +28,9 @@
 		top: 220px;
 		bottom: 85px;
 		right: 60px;
-		width: 320px !important;
+		width: 320px;
+		min-width: 320px;
+		max-width: 320px;
 		height: unset;
 	}
 

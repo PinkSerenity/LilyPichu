@@ -32,6 +32,11 @@
 		height: unset;
 	}
 
+	#{selectors.$userPanelOuter}, 
+	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container}::after{		
+		border-radius: var(--border-radius);
+	}
+
 	#{selectors.$nowPlayingColumn},
 	#{selectors.$memberListContainer} {
 		top: 280px;
@@ -112,7 +117,6 @@
 			justify-content: center;
 			font-size: 30px;
 			color: var(--text-normal);
-			border-radius: var(--border-radius);
 			overflow: hidden;
 		}
 

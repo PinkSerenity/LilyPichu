@@ -33,7 +33,8 @@
 
 	#{selectors.$nowPlayingColumn},
 	#{selectors.$membersWrap},
-	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container} {
+	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container}::after,
+	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container}::before {
 		top: 280px;
 		bottom: 120px;
 	}
@@ -104,8 +105,6 @@
 		// Basic right popout when there's nothing
 		&::after {
 			content: "Stay comfy";
-			top: 280px;
-			bottom: 120px;
 			z-index: -2;
 			background-color: var(--background-primary);
 			text-align: center;
@@ -120,8 +119,6 @@
 
 		&::before {
 			content: "";
-			top: 280px;
-			bottom: 120px;
 			right: 70px;
 			z-index: -1;
 			width: 300px;

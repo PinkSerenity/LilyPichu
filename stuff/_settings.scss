@@ -120,7 +120,7 @@
 			position: absolute;
 			-webkit-mask-image: linear-gradient(to bottom, #000000, #00000000);
 			min-width: 900px !important;
-			height: 100px;
+			height: 100%;
 
 			mask {
 				display: none;
@@ -158,8 +158,7 @@
 			align-items: center;
 
 			#{selectors.$avatar} {
-				top: 106px;
-				left: 34px;
+				top: 102px;
 				border-color: transparent;
 				background-color: transparent;
 			}

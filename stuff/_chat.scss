@@ -203,6 +203,10 @@
 		box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 	}
 
+	#{selectors.$message_} {
+		padding-right: 52px !important;
+	}
+
 	// Attachements // TODO
 	.textContainer_d8e2d0,
 	.footer_d8e2d0 {

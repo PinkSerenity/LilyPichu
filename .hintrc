@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "development"
+  ],
+  "browserslist": [
+    "last 2 Electron versions"
+  ]
+}

@@ -159,8 +159,9 @@
 
 			#{selectors.$avatar} {
 				top: 102px;
-				border-color: transparent;
-				background-color: transparent;
+			}
+			#{selectors.$avatar}::before {
+				background-color: red;
 			}
 		}
 

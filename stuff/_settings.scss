@@ -161,6 +161,7 @@
 				top: 102px;
 			}
 			#{selectors.$avatar}::before {
+				display: block;
 				position: fixed;
 				top: 220px;
 				bottom: 85px;

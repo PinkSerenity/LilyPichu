@@ -14,17 +14,17 @@
   // Border-radius for the whole theme
   --border-radius: 20px;
 
-  .colorDefault_d90b3d.focused_d90b3d,
-  .colorDefault_d90b3d:active:not(.hideInteraction_d90b3d) {
+  .colorDefault_c1e9c4.focused_c1e9c4,
+  .colorDefault_c1e9c4:active:not(.hideInteraction_c1e9c4) {
     background-color: var(--background-modifier-hover) !important;
   }
 
   // Buttons
-  .lookFilled_dd4f85 {
+  .lookFilled__201d5 {
     background-color: #c5536c !important;
   }
-  .lookFilled_dd4f85:active,
-  .lookFilled_dd4f85:hover {
+  .lookFilled__201d5:active,
+  .lookFilled__201d5:hover {
     background-color: #b64a61 !important;
   }
   .lookOutlined-3yKVGo:not(.colorWhite-1H92hK) {
@@ -33,8 +33,8 @@
   }
 
   // Hover background
-  .colorDefault_d90b3d.focused_d90b3d,
-  .colorDefault_d90b3d:active:not(.hideInteraction_d90b3d) {
+  .colorDefault_c1e9c4.focused_c1e9c4,
+  .colorDefault_c1e9c4:active:not(.hideInteraction_c1e9c4) {
     color: var(--interactive-normal);
   }
 }

@@ -41,20 +41,20 @@
 }
 
 // Server radius
-.wrapperSimple_c5f96a,
+.wrapperSimple_cc5dd2,
 .folderIconWrapper-226oVY,
 .folderIconWrapper-1_bOZe,
 .expandedFolderBackground-2sPsd-,
-.flexChild_dc333f .avatarUploaderInner-yEhTv5 {
+.flexChild__7c0ba .avatarUploaderInner-yEhTv5 {
 	border-radius: var(--border-radius);
 }
 
-.panels_a4d4d9 {
+.panels_c48ade {
 	z-index: unset;
 }
 
 // Game panel
-.panel_bf1a22 {
+.panel__5dec7 {
 	position: fixed;
 	left: 0;
 	bottom: 0;
@@ -63,11 +63,11 @@
 	background-color: var(--background-tertiary);
 	transition: width 0.35s;
 
-	.gameWrapper_bf1a22 {
+	.gameWrapper__5dec7 {
 		margin-left: 12px;
 	}
 
-	.info_bf1a22,
+	.info__5dec7,
 	.actions_bf1a22 {
 		opacity: 0;
 	}
@@ -81,10 +81,10 @@
 		box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2),
 		0 0 0 1px rgba(56, 31, 31, 0.11);
 
-		.gameWrapper_bf1a22 {
+		.gameWrapper__5dec7 {
 			margin-left: 0;
 		}
-		.info_bf1a22,
+		.info__5dec7,
 		.actions_bf1a22 {
 			opacity: 1;
 		}

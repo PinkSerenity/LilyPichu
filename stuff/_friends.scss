@@ -36,16 +36,16 @@
 	}
 
 	// Friend call
-	.nowPlayingColumn_c2739c .scroller_bf550a { // TODO: update
+	.nowPlayingColumn__133bf .scroller__7d20c { // TODO: update
 		border: none;
 	}
-	.controlButton_b6e2f9 foreignObject { // TODO: update
+	.controlButton__1405b foreignObject { // TODO: update
 		mask: none;
 	}
-	.colorable_ef18ee.primaryDark_ef18ee { // TODO: update
+	.colorable_f1ceac.primaryDark_f1ceac { // TODO: update
 		background-color: var(--background-primary);
 	}
-	.wrapper_d880dc { // TODO: update
+	.wrapper_cb9592 { // TODO: update
 		background-color: var(--background-tertiary);
 	}
 
@@ -54,10 +54,10 @@
 		#{selectors.$inset} {
 			background-color: var(--background-primary);
 		}
-		.separator_cd82a7 { // TODO: what was this? cant find any separators?
+		.separator__00943 { // TODO: what was this? cant find any separators?
 			display: none;
 		}
-		.voiceSectionIconWrapper_cd82a7 {
+		.voiceSectionIconWrapper__00943 {
 			background-color: var(--background-tertiary);
 		}
 		#{selectors.$outer}#{selectors.$interactive}:hover {
@@ -73,7 +73,7 @@
 		}
 	}
 	// Regionnal selector friend call // TODO
-	.quickSelectPopout_abbf45.regionSelectPopout_ccb5ca {
+	.quickSelectPopout_ebaca5.regionSelectPopout__5621e {
 		background-color: var(--background-secondary-alt);
 	}
 

@@ -121,26 +121,26 @@
 	}
 
 	// Spotify session
-	.invite_f61cb8 { // TODO
+	.invite__4d3fa { // TODO
 		background-color: var(--background-secondary);
 		border: none;
 		border-radius: var(--border-radius);
 	}
 
 	// Spotify embed
-	.embedSpotify_b0068a { // TODO
+	.embedSpotify__623de { // TODO
 		border-radius: var(--border-radius);
 	}
 
 	// Discord Gift
-	.tile_ab47a1 { // TODO
+	.tile__72090 { // TODO
 		background-color: var(--background-secondary);
 		border-radius: var(--border-radius);
 	}
-	.tileHorizontal_ab47a1.tile_ab47a1:hover { // TODO
+	.tileHorizontal__72090.tile__72090:hover { // TODO
 		background-color: var(--background-secondary-alt);
 	}
-	.invalidPoop_ff31dd { // TODO
+	.invalidPoop__857bf { // TODO
 		background-color: rgba(0, 0, 0, 0.103);
 	}
 
@@ -185,7 +185,7 @@
 			background: var(--background-tertiary);
 			border-radius:  var(--border-radius) 0 0 var(--border-radius);
 		}
-		.container_f2bfbb, // what was this?? TODO
+		.container_cc2dff, // what was this?? TODO
 		#{selectors.$reactors} {
 			background: var(--background-secondary);
 			border-radius: 0 var(--border-radius) var(--border-radius) 0;
@@ -208,8 +208,8 @@
 	}
 
 	// Attachements // TODO
-	.textContainer_d8e2d0,
-	.footer_d8e2d0 {
+	.textContainer__4d95d,
+	.footer__4d95d {
 		border: none;
 	}
 

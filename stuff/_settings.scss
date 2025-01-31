@@ -160,18 +160,6 @@
 			#{selectors.$avatar} {
 				top: 102px;
 			}
-			#{selectors.$avatar}::before {
-				display: block;
-				position: fixed;
-				top: 220px;
-				bottom: 85px;
-				right: 60px;
-				width: 320px;
-				min-width: 320px;
-				max-width: 320px;
-				height: unset;
-				background-color: red;
-			}
 		}
 
 		#{selectors.$background} {

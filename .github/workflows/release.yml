@@ -42,9 +42,6 @@ jobs:
           mv /tmp/LilyPichu/stuff/overlay.css ./stuff/overlay.css
           mv /tmp/LilyPichu/main.css ./main.css
 
-      - name: Auto minify the files
-        uses: nizarmah/auto-minify@v3
-
       - name: Add and Commit changes
         uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
         with:

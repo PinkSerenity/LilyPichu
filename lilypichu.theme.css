@@ -5,10 +5,10 @@
 * @invite rtBQX5D3bD
 * @version 1.0
 */
-/* @import url("https://raw.githubusercontent.com/PinkSerenity/LilyPichu/refs/heads/release/main.css"); */
+@import url("https://raw.githubusercontent.com/PinkSerenity/LilyPichu/refs/heads/release/main.css");
 
 /* Remove decorations */
-/* @import url("https://raw.githubusercontent.com/PinkSerenity/LilyPichu/refs/heads/release/stuff/overlay.css"); */
+@import url("https://raw.githubusercontent.com/PinkSerenity/LilyPichu/refs/heads/release/stuff/overlay.css");
 
 :root {
   /* --- User variables --- */

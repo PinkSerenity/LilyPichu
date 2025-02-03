@@ -1,29 +1,21 @@
 @use 'selectors';
-@forward "stuff/chat";
-@forward "stuff/server-list";
-@forward "stuff/channel-list";
-@forward "stuff/channel-bar";
-@forward "stuff/member-list";
-@forward "stuff/settings";
-@forward "stuff/friends";
-@forward "stuff/other";
+// @forward "stuff/chat";
+// @forward "stuff/server-list";
+// @forward "stuff/channel-list";
+// @forward "stuff/channel-bar";
+// @forward "stuff/member-list";
+// @forward "stuff/settings";
+// @forward "stuff/friends";
+// @forward "stuff/other";
 
-@import url("https://nyri4.github.io/donators/donators.css");
-@import url("https://fonts.googleapis.com/css2?family=Nunito");
-
-// Donators
-#{selectors.$profileBadges} > :last-child::before,
-#{selectors.$badgeList} > :last-child::before {
-	z-index: 10;
-}
 
 // Right popout
 @media (min-width: 1350px) {
-	#{selectors.$userPanelOuter}, /* user profile in dms */
-	#{selectors.$memberListContainer}, /* member list */
-	#{selectors.$nowPlayingColumn}, /* friends activity */
+	#{selectors.$userPanelOuter}, // user profile in dms
+	#{selectors.$memberListContainer}, // member list
+	#{selectors.$nowPlayingColumn}, // friends activity
 	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container}::after,
-	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container}::before { /* empty thing */
+	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container}::before { // empty thing
 		position: fixed;
 		top: 220px;
 		bottom: 85px;

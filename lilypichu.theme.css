@@ -10,6 +10,10 @@
 /* Remove decorations */
 @import url("https://raw.githubusercontent.com/PinkSerenity/LilyPichu/refs/heads/release/stuff/overlay.css");
 
+@import url("https://fonts.googleapis.com/css2?family=Nunito");
+
+
+
 :root {
   /* --- User variables --- */
 

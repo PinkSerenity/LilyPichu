@@ -1,3 +1,10 @@
+# Progress
+- [x] Make nightly build
+- [ ] Port basic layout
+- [ ] Port more complext stuff
+- [ ] Port decorations
+
+
 <img align="right" src="https://nyri4.github.io/LilyPichu/assets/preview.png" alt="Preview" width="40%">
 
 <div align="left">
@@ -10,13 +17,9 @@
 
   <a href="https://gibbu.github.io/ThemePreview/?file=https://cdn.jsdelivr.net/gh/NYRI4/LilyPichu/lilypichu.theme.css"><strong>» Theme Preview</strong></a>
   ・
-  <a href="https://github.com/PinkSerenity/LilyPichu/issues"><del>Report an issue</del></a> (closed until I have completely refactored it)
-  ・
   <a href="https://discord.gg/comfy-camp-811203761619337259">Join the support server</a>
 </div>
 <br/>
-
-# Very laggy, I will refactor it in debug builds before releasing it to the public!
 
 Please allow me to finish refactoring before taking care of any other issues. If you want to access nightly builds, edit `lilypichu.theme.css` and replace `@import url("https://raw.githubusercontent.com/PinkSerenity/LilyPichu/refs/heads/release/main.css");` with `@import url("https://raw.githubusercontent.com/PinkSerenity/LilyPichu/refs/heads/debug/main.css");`.
 

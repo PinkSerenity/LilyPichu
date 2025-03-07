@@ -10,7 +10,14 @@
 /* Remove decorations */
 @import url("https://raw.githubusercontent.com/PinkSerenity/LilyPichu/refs/heads/release/stuff/overlay.css");
 
+
+  /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Nunito");
+#app-mount {
+  --font-primary: "Nunito";
+  --font-display: "Nunito";
+}
+
 
 
 

@@ -1,15 +1,16 @@
-.visual-refresh
-	--bg-overlay-4: var(--background-secondary) !important
-	--background-mod-subtle: var(--background-secondary) !important
-	--background-base-low: var(--background-secondary-alt) !important
-	--background-base-lower: var(--background-primary) !important
-	--background-base-lowest: var(--background-tertiary) !important
-	--bg-base-tertiary: var(--background-tertiary) !important
-	--custom-channel-members-bg: var(--background-secondary) !important
-	--chat-background-default: var(--background-secondary) !important
-	--input-background: var(--background-tertiary) !important
-	--background-surface-high: var(--background-secondary) !important
-	--background-surface-higher: var(--background-floating) !important
+@supports (color:color-mix(in lch,red,blue))
+	.visual-refresh
+		--bg-overlay-4: var(--background-secondary) !important
+		--background-mod-subtle: var(--background-secondary) !important
+		--background-base-low: var(--background-secondary-alt) !important
+		--background-base-lower: var(--background-primary) !important
+		--background-base-lowest: var(--background-tertiary) !important
+		--bg-base-tertiary: var(--background-tertiary) !important
+		--custom-channel-members-bg: var(--background-secondary) !important
+		--chat-background-default: var(--background-secondary) !important
+		--input-background: var(--background-tertiary) !important
+		--background-surface-high: var(--background-secondary) !important
+		--background-surface-higher: var(--background-floating) !important
 
 
 %dark-theme
@@ -95,17 +96,17 @@
 	@extend %light-theme
 
 :root
-  // Base colors
-  --base-red: #FD8787;
-  --base-orange: #E6803D;
-  --base-yellow: #FDD046;
-  --base-green: #5E9846;
-  --base-blue: #3E64C7;
-  --base-purple: #9050B8;
+	// Base colors
+	--base-red: #FD8787
+	--base-orange: #E6803D
+	--base-yellow: #FDD046
+	--base-green: #5E9846
+	--base-blue: #3E64C7
+	--base-purple: #9050B8
 
-  --base-red-dark: #6E3F4A;
-  --base-orange-dark: #5E2E16;
-  --base-yellow-dark: #5D4A1F;
-  --base-green-dark: #2F4626;
-  --base-blue-dark: #1E305B;
-  --base-purple-dark: #472A5E;
+	--base-red-dark: #6E3F4A
+	--base-orange-dark: #5E2E16
+	--base-yellow-dark: #5D4A1F
+	--base-green-dark: #2F4626
+	--base-blue-dark: #1E305B
+	--base-purple-dark: #472A5E

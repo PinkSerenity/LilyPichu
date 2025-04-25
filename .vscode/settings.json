@@ -5,5 +5,18 @@
 		"**/*.rpa": true,
 		"**/*.rpymc": true,
 		"**/cache/": true
-	}
+	},
+	"liveSassCompile.settings.formats": [
+    	// This is the default.
+		{
+			"format": "compressed",
+			"extensionName": ".css",
+
+			// null for all three -> denotes the same path as the SASS file
+			"savePath": "/build"
+		}
+	],
+	"liveSassCompile.settings.includeItems": [
+		"/lilypichu.sass"
+	]
 }

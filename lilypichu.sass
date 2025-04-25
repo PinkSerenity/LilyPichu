@@ -1,4 +1,22 @@
 @use 'components/colors'
+
+.visual-refresh
+	.scroller_ef3116
+		padding-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) * 2) !important
+	.wrapper_ef3116
+		margin-bottom: unset !important
+
+	.sidebarRegionScroller__23e6b
+		background: var(--background-secondary) !important
+
+	.contentRegionScroller__23e6b
+		background-color: unset !important
+
+	.sidebar_c48ade:after,
+	.children__9293f:after
+		display: none !important
+
+
 // @forward "stuff/chat";
 // @forward "stuff/server-list";
 // @forward "stuff/channel-list";

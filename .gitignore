@@ -3,3 +3,4 @@ sass.txt
 .prettierignore
 node_modules
 *.code-workspace
+lilypichu.original.css

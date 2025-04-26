@@ -30,11 +30,11 @@
 	--interactive-active: #e2c1c7
 
 	// Background color
-	--background-primary: color-mix(in srgb, var(--base-color-dark) 86%, black)
-	--background-secondary: color-mix(in srgb, var(--base-color-dark) 65%, black)
-	--background-secondary-alt: color-mix(in srgb, var(--base-color-dark) 53%, black)
-	--background-tertiary: color-mix(in srgb, var(--base-color-dark) 31%, black)
-	--background-floating: color-mix(in srgb, var(--base-color-dark) 30%, black)
+	--background-primary: color-mix(in srgb, var(--base-color) 86%, black)
+	--background-secondary: color-mix(in srgb, var(--base-color) 65%, black)
+	--background-secondary-alt: color-mix(in srgb, var(--base-color) 53%, black)
+	--background-tertiary: color-mix(in srgb, var(--base-color) 31%, black)
+	--background-floating: color-mix(in srgb, var(--base-color) 30%, black)
 	--background-accent: #c5536c
 	--channeltextarea-background: var(--background-secondary)
 	--modal-background: var(--background-primary)
@@ -55,6 +55,16 @@
 
 	// Other
 	--channel-text-area-placeholder: var(--interactive-normal)
+
+	// Preset colors
+	--preset-pink: #632D46
+	--preset-red: #6E3F4A
+	--preset-orange: #5E2E16
+	--preset-yellow: #5D4A1F
+	--preset-green: #2F4626
+	--preset-turquoise: #245150
+	--preset-blue: #1E305B
+	--preset-purple: #472A5E
 
 
 %light-theme
@@ -88,6 +98,17 @@
 	--scrollbar-auto-track: var(--background-secondary-alt)
 	--scrollbar-thin-thumb: var(--background-tertiary)
 	--scrollbar-thin-track: transparent
+	
+	// Preset colors
+	--preset-pink: #F766A8
+	--preset-red: #FD8787
+	--preset-orange: #E6803D
+	--preset-yellow: #FDD046
+	--preset-green: #5E9846
+	--preset-turquoise: #41C7C1
+	--preset-blue: #3E64C7
+	--preset-purple: #9050B8
+
 
 .theme-dark,
 .theme-darker,
@@ -100,23 +121,3 @@
 .theme-light,
 .visual-refresh.theme-light
 	@extend %light-theme
-
-:root
-	// Base colors
-	--base-pink: #F766A8;
-	--base-red: #FD8787
-	--base-orange: #E6803D
-	--base-yellow: #FDD046
-	--base-green: #5E9846
-	--base-turquoise: #41C7C1
-	--base-blue: #3E64C7
-	--base-purple: #9050B8
-
-	--base-pink-dark: #632D46
-	--base-red-dark: #6E3F4A
-	--base-orange-dark: #5E2E16
-	--base-yellow-dark: #5D4A1F
-	--base-green-dark: #2F4626
-	--base-turquoise-dark: #245150
-	--base-blue-dark: #1E305B
-	--base-purple-dark: #472A5E

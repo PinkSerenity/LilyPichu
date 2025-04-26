@@ -1,19 +1,18 @@
-@supports (color:color-mix(in lch,red,blue))
-	.visual-refresh.theme-light,
-	.visual-refresh.theme-dark,
-	.visual-refresh.theme-darker,
-	.visual-refresh.theme-midnight
-		--bg-overlay-4: var(--background-secondary) !important
-		--background-mod-subtle: var(--background-secondary) !important
-		--background-base-low: var(--background-secondary-alt) !important
-		--background-base-lower: var(--background-primary) !important
-		--background-base-lowest: var(--background-tertiary) !important
-		--bg-base-tertiary: var(--background-tertiary) !important
-		--custom-channel-members-bg: var(--background-secondary) !important
-		--chat-background-default: var(--background-secondary) !important
-		--input-background: var(--background-tertiary) !important
-		--background-surface-high: var(--background-secondary) !important
-		--background-surface-higher: var(--background-floating) !important
+.visual-refresh.theme-light,
+.visual-refresh.theme-dark,
+.visual-refresh.theme-darker,
+.visual-refresh.theme-midnight
+	--bg-overlay-4: var(--background-secondary) !important
+	--background-mod-subtle: var(--background-secondary) !important
+	--background-base-low: var(--background-secondary-alt) !important
+	--background-base-lower: var(--background-primary) !important
+	--background-base-lowest: var(--background-tertiary) !important
+	--bg-base-tertiary: var(--background-tertiary) !important
+	--custom-channel-members-bg: var(--background-secondary) !important
+	--chat-background-default: var(--background-secondary) !important
+	--input-background: var(--background-tertiary) !important
+	--background-surface-high: var(--background-secondary) !important
+	--background-surface-higher: var(--background-floating) !important
 
 
 %dark-theme
@@ -92,10 +91,14 @@
 
 .theme-dark,
 .theme-darker,
-.theme-midnight
+.theme-midnight,
+.visual-refresh.theme-dark,
+.visual-refresh.theme-darker,
+.visual-refresh.theme-midnight
 	@extend %dark-theme
 
-.theme-light
+.theme-light,
+.visual-refresh.theme-light
 	@extend %light-theme
 
 :root

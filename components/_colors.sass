@@ -4,15 +4,9 @@
 	--bg-overlay-3: var(--background-secondary-alt)
 	--bg-overlay-4: var(--background-secondary) !important
 	--background-mod-subtle: var(--background-secondary) !important
-	--background-base-low: var(--background-secondary-alt) !important
-	--background-base-lower: var(--background-primary) !important
-	--background-base-lowest: var(--background-tertiary) !important
 	--bg-base-tertiary: var(--background-tertiary) !important
 	--custom-channel-members-bg: var(--background-secondary) !important
 	--chat-background-default: var(--background-secondary) !important
-	--input-background: var(--background-tertiary) !important
-	--background-surface-high: var(--background-secondary) !important
-	--background-surface-higher: var(--background-floating) !important
 
 
 %dark-theme
@@ -48,6 +42,12 @@
 	--toast-border: #49292f !important
 	--input-background: var(--background-secondary)
 
+	--background-base-low: var(--background-secondary-alt) !important
+	--background-base-lower: var(--background-primary) !important
+	--background-base-lowest: var(--background-tertiary) !important
+	--background-surface-high: var(--background-secondary) !important
+	--background-surface-higher: var(--background-floating) !important
+
 	// Scrollbar
 	--scrollbar-auto-thumb: var(--background-tertiary)
 	--scrollbar-auto-track: var(--background-secondary-alt)
@@ -72,6 +72,8 @@
 	--preset-turquoise: #245150
 	--preset-blue: #1E305B
 	--preset-purple: #472A5E
+
+	@extend %general
 
 
 %light-theme
@@ -102,6 +104,12 @@
 	--background-modifier-selected: #0001
 	--input-background: var(--background-secondary)
 
+	--background-base-low: var(--background-secondary-alt) !important
+	--background-base-lower: var(--background-primary) !important
+	--background-base-lowest: var(--background-tertiary) !important
+	--background-surface-high: var(--background-secondary) !important
+	--background-surface-higher: var(--background-floating) !important
+
 	// Scrollbar
 	--scrollbar-auto-thumb: var(--background-tertiary)
 	--scrollbar-auto-track: var(--background-secondary-alt)
@@ -126,18 +134,16 @@
 
 	@extend %general
 
-
+	
 .theme-dark,
 .theme-darker,
 .theme-midnight
 	.visual-refresh
 		@extend %dark-theme
-	@extend %dark-theme
 
 .theme-light
 	.visual-refresh
 		@extend %light-theme
-	@extend %light-theme
 
 .visual-refresh
 	@extend %general

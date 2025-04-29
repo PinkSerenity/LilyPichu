@@ -16,6 +16,8 @@
 			"savePath": "/build"
 		}
 	],
+	"liveSassCompile.settings.generateMap": false,
+	"liveSassCompile.settings.showOutputWindowOn": "None",
 	"liveSassCompile.settings.includeItems": [
 		"/lilypichu.sass"
 	]

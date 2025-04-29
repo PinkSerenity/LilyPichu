@@ -125,14 +125,20 @@
 	--preset-purple: #9050B8
 
 
-.visual-refresh
+.theme-dark,
+.theme-darker,
+.theme-midnight,
+.visual-refresh.theme-dark,
+.visual-refresh.theme-darker,
+.visual-refresh.theme-midnight
+	@extend %dark-theme
 	@extend %general
 
-	.theme-light
-		@extend %light-theme
-	
-	.theme-dark,
-	.theme-darker,
-	.theme-midnight
-		@extend %dark-theme
+.theme-light,
+.visual-refresh.theme-light
+	@extend %light-theme
+	@extend %general
+
+.visual-refresh
+	@extend %general
 

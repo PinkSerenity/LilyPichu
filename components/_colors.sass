@@ -134,16 +134,18 @@
 
 	@extend %general
 
-	
+
 .theme-dark,
 .theme-darker,
 .theme-midnight
 	.visual-refresh
 		@extend %dark-theme
+	@extend %dark-theme
 
 .theme-light
 	.visual-refresh
 		@extend %light-theme
+	@extend %dark-theme
 
 .visual-refresh
 	@extend %general

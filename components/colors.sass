@@ -1,7 +1,7 @@
-.visual-refresh.theme-light,
-.visual-refresh.theme-dark,
-.visual-refresh.theme-darker,
-.visual-refresh.theme-midnight
+%general
+	--bg-overlay-1: var(--background-primary)
+	--bg-overlay-2: var(--background-secondary)
+	--bg-overlay-3: var(--background-secondary-alt)
 	--bg-overlay-4: var(--background-secondary) !important
 	--background-mod-subtle: var(--background-secondary) !important
 	--background-base-low: var(--background-secondary-alt) !important
@@ -18,6 +18,7 @@
 %dark-theme
 	// Text
 	--text-normal: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), white 80%)
+	--text-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), white 75%) !important
 	--header-primary: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), white 70%)
 	--interactive-normal: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), #F0F0F0 60%)
 	--channels-default: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), white 80%)
@@ -38,7 +39,7 @@
 	--background-accent: #c5536c
 	--channeltextarea-background: var(--background-secondary)
 	--modal-background: var(--background-primary)
-	--background-modifier-hover: #0001
+	--background-modifier-hover: #fff1
 	--background-modifier-active:  #fff1
 	--background-modifier-selected: #fff1
 	--toast-background: #5e3640 !important
@@ -79,7 +80,7 @@
 	--text-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #303030 75%) !important
 	--header-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 60%) !important
 	--interactive-normal: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 65%) !important
-	--channels-default: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #303030 60%) !important
+	--channels-default: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #303030 70%) !important
 
 	--text-muted: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #808080 70%) !important
 	--interactive-muted: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #909090 50%) !important
@@ -97,8 +98,8 @@
 	--background-accent: color-mix(in sRGB, var(--base-color-light, var(--base-color, var(--preset-red))), black 30%) !important
 	--channeltextarea-background: var(--background-secondary)
 	--background-modifier-hover: #0001
-	--background-modifier-active:  #fff1
-	--background-modifier-selected: #fff1
+	--background-modifier-active:  #0001
+	--background-modifier-selected: #0001
 	--input-background: var(--background-secondary)
 
 	// Scrollbar
@@ -131,7 +132,9 @@
 .visual-refresh.theme-darker,
 .visual-refresh.theme-midnight
 	@extend %dark-theme
+	@extend %general
 
 .theme-light,
 .visual-refresh.theme-light
 	@extend %light-theme
+	@extend %general

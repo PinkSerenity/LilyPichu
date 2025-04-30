@@ -1,4 +1,4 @@
-%general
+@mixin general
 	--bg-overlay-1: var(--background-primary)
 	--bg-overlay-2: var(--background-secondary)
 	--bg-overlay-3: var(--background-secondary-alt)
@@ -9,7 +9,7 @@
 	--chat-background-default: var(--background-secondary) !important
 
 
-%dark-theme
+@mixin dark-theme
 	// Text
 	--text-normal: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), white 80%)
 	--text-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), white 75%) !important
@@ -33,8 +33,8 @@
 	--background-accent: #c5536c
 	--channeltextarea-background: var(--background-secondary)
 	--modal-background: var(--background-primary)
-	--background-modifier-hover: #fff1
-	--background-modifier-active:  #fff1
+	--background-modifier-hover: #ffffff08
+	--background-modifier-active:  #fff2
 	--background-modifier-selected: #fff1
 	--toast-background: #5e3640 !important
 	--toast-header: #3b1d24 !important
@@ -59,6 +59,8 @@
 	--info-warning-foreground: hsl(from var(--background-primary) calc(h + 51) 100 50)
 	--background-message-highlight: color-mix(in oklab, var(--background-primary), var(--replying-foreground) 20%)
 	--background-mentioned: color-mix(in oklab, var(--background-primary), var(--info-warning-foreground) 15%)
+	--background-replying-hover: color-mix(in oklab, var(--background-message-highlight), #fff 6.25%)
+	--background-mentioned-hover: color-mix(in oklab, var(--background-mentioned), #fff 6.25%)
 
 	// Other
 	--channel-text-area-placeholder: var(--interactive-normal)
@@ -73,10 +75,10 @@
 	--preset-blue: #1E305B
 	--preset-purple: #472A5E
 
-	@extend %general
+	@include general
 
 
-%light-theme
+@mixin light-theme
 	// Text
 	--text-normal: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 75%) !important
 	--text-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #303030 75%) !important
@@ -121,6 +123,8 @@
 	--info-warning-foreground: hsl(from var(--background-primary) calc(h + 51) 100 50)
 	--background-message-highlight: color-mix(in oklab, var(--background-primary), var(--replying-foreground) 20%)
 	--background-mentioned: color-mix(in oklab, var(--background-primary), var(--info-warning-foreground) 15%)
+	--background-replying-hover: color-mix(in oklab, var(--background-message-highlight), #000 6.25%)
+	--background-mentioned-hover: color-mix(in oklab, var(--background-mentioned), #000 6.25%)
 	
 	// Preset colors
 	--preset-pink: #F766A8
@@ -131,26 +135,26 @@
 	--preset-turquoise: #41C7C1
 	--preset-blue: #3E64C7
 	--preset-purple: #9050B8
-
-	@extend %general
+	
+	@include general
 
 
 .theme-dark,
 .visual-refresh.theme-dark
-	@extend %dark-theme
+	@include dark-theme
 
 .theme-darker,
 .visual-refresh.theme-darker
-	@extend %dark-theme
+	@include dark-theme
 
 .theme-midnight,
 .visual-refresh.theme-midnight
-	@extend %dark-theme
+	@include dark-theme
 
 .theme-light,
 .visual-refresh.theme-light
-	@extend %light-theme
+	@include light-theme
 
 .visual-refresh
-	@extend %general
+	@include general
 

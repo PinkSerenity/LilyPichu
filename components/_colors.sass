@@ -1,4 +1,4 @@
-@mixin general
+%general
 	--bg-overlay-1: var(--background-primary)
 	--bg-overlay-2: var(--background-secondary)
 	--bg-overlay-3: var(--background-secondary-alt)
@@ -9,7 +9,7 @@
 	--chat-background-default: var(--background-secondary) !important
 
 
-@mixin dark-theme
+%dark-theme
 	// Text
 	--text-normal: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), white 80%)
 	--text-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), white 75%) !important
@@ -75,10 +75,10 @@
 	--preset-blue: #1E305B
 	--preset-purple: #472A5E
 
-	@include general
+	@extend %general
 
 
-@mixin light-theme
+%light-theme
 	// Text
 	--text-normal: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 75%) !important
 	--text-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #303030 75%) !important
@@ -135,26 +135,27 @@
 	--preset-turquoise: #41C7C1
 	--preset-blue: #3E64C7
 	--preset-purple: #9050B8
-	
-	@include general
+
+	@extend %general
 
 
 .theme-dark,
-.visual-refresh.theme-dark
-	@include dark-theme
+.visual-refresh.theme-dark,
+.outer_c0bea0 .theme-dark .images-dark .user-profile-sidebar
+	@extend %dark-theme
 
 .theme-darker,
 .visual-refresh.theme-darker
-	@include dark-theme
+	@extend %dark-theme
 
 .theme-midnight,
 .visual-refresh.theme-midnight
-	@include dark-theme
+	@extend %dark-theme
 
 .theme-light,
 .visual-refresh.theme-light
-	@include light-theme
+	@extend %light-theme
 
 .visual-refresh
-	@include general
+	@extend %general
 

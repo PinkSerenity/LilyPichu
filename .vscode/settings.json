@@ -13,7 +13,7 @@
 			"extensionName": ".css",
 
 			// null for all three -> denotes the same path as the SASS file
-			"savePath": "/build-dev"
+			"savePath": "/build"
 		}
 	],
 	"liveSassCompile.settings.generateMap": false,

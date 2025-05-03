@@ -130,19 +130,14 @@
 	@extend %general
 
 
-.theme-dark,
-.theme-darker,
-.theme-midnight,
-.theme-dark.user-profile-sidebar,
-.theme-darker.user-profile-sidebar,
-.theme-midnight.user-profile-sidebar,
-.visual-refresh .theme-dark,
-.visual-refresh .theme-darker,
-.visual-refresh .theme-midnight
+.theme-dark *,
+.theme-darker *,
+.theme-midnight *
 	@extend %dark-theme
 
-.theme-light,
-.theme-light.user-profile-sidebar,
-.visual-refresh .theme-light
+.theme-light *
 	@extend %light-theme
+
+*
+	@extend %general
 

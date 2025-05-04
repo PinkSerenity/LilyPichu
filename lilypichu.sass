@@ -1,32 +1,33 @@
 @use 'components/_colors'
+@use 'components/_selectors'
 
 .visual-refresh
-	.scroller_ef3116
-		padding-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) * 2) !important
-	.wrapper_ef3116
+	$server-sidebar
 		margin-bottom: unset !important
+	$server-sidebar-scroller
+		padding-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) * 2) !important
 
-	.sidebarRegionScroller__23e6b
+	$settings-tabs-sidebar-scroller
 		background: var(--background-secondary) !important
 
-	.contentRegionScroller__23e6b
+	$settings-tabs-content-scroller
 		background-color: unset !important
 
-	.sidebar_c48ade:after,
+	$sidebar:after,
 	.children__9293f:after
 		display: none !important
 
-	.replying__5126c:before
+	$replying-message-highlight:before
 		background: var(--replying-foreground)
 
-	.replying__5126c:hover
+	$replying-message-highlight:hover
 		background: var(--background-replying-hover) !important
 
-	.mentioned__5126c:hover
+	$mentioned-message-highlight:hover
 		background: var(--background-mentioned-hover) !important
 	
-	.childWrapper__6e9f8
-		--background-surface-higher: var(--background-secondary) !important
+	$server-sidebar-dm-button
+		--background-surface-higher: var(--background-secondary)
 
 
 // @forward "stuff/chat";

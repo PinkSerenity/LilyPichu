@@ -2,16 +2,17 @@
 	--bg-overlay-1: var(--background-primary)
 	--bg-overlay-2: var(--background-secondary)
 	--bg-overlay-3: var(--background-secondary-alt)
-	--bg-overlay-4: var(--background-secondary) !important
-	--background-mod-subtle: var(--background-secondary) !important
-	--bg-base-tertiary: var(--background-tertiary) !important
-	--custom-channel-members-bg: var(--background-secondary) !important
-	--chat-background-default: var(--background-secondary) !important
-	--background-base-low: var(--background-secondary-alt) !important
-	--background-base-lower: var(--background-primary) !important
-	--background-base-lowest: var(--background-tertiary) !important
-	--background-surface-high: var(--background-secondary) !important
-	--background-surface-higher: var(--background-floating) !important
+	--bg-overlay-4: var(--background-secondary)
+	--background-mod-subtle: var(--background-secondary)
+	--bg-base-tertiary: var(--background-tertiary)
+	--custom-channel-members-bg: var(--background-secondary)
+	--chat-background-default: var(--background-secondary)
+	--background-base-low: var(--background-secondary-alt)
+	--background-base-lower: var(--background-primary)
+	--background-base-lowest: var(--background-tertiary)
+	--background-surface-high: var(--background-secondary)
+	--background-surface-higher: var(--background-floating)
+	--background-surface-highest: var(--background-primary)
 	--channeltextarea-background: var(--background-secondary)
 	--input-background: var(--background-secondary)
 
@@ -19,7 +20,7 @@
 %dark-theme
 	// Text
 	--text-normal: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), white 80%)
-	--text-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), white 75%) !important
+	--text-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), white 75%)
 	--header-primary: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), white 70%)
 	--interactive-normal: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), #F0F0F0 60%)
 	--channels-default: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), white 80%)
@@ -42,10 +43,10 @@
 	--background-modifier-hover: #ffffff08
 	--background-modifier-active:  #fff2
 	--background-modifier-selected: #fff1
-	--toast-background: #5e3640 !important
-	--toast-header: #3b1d24 !important
-	--toast-contents: #49292f !important
-	--toast-border: #49292f !important
+	--toast-background: #5e3640
+	--toast-header: #3b1d24
+	--toast-contents: #49292f
+	--toast-border: #49292f
 
 	// Scrollbar
 	--scrollbar-auto-thumb: var(--background-tertiary)
@@ -78,26 +79,26 @@
 
 %light-theme
 	// Text
-	--text-normal: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 75%) !important
-	--text-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #303030 75%) !important
-	--header-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 60%) !important
-	--interactive-normal: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 65%) !important
-	--channels-default: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #303030 60%) !important
+	--text-normal: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 75%)
+	--text-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #303030 75%)
+	--header-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 60%)
+	--interactive-normal: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 65%)
+	--channels-default: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #303030 60%)
 
-	--text-muted: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #808080 70%) !important
-	--interactive-muted: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #909090 50%) !important
+	--text-muted: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #808080 70%)
+	--interactive-muted: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #909090 50%)
 
-	--header-secondary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 50%) !important
-	--interactive-hover: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 50%) !important
-	--interactive-active: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #303030 75%) !important
+	--header-secondary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 50%)
+	--interactive-hover: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 50%)
+	--interactive-active: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #303030 75%)
 
 	// Background color
-	--background-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))) 10%, white) !important
-	--background-secondary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))) 15%, white) !important
-	--background-secondary-alt: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))) 47%, white) !important
-	--background-tertiary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))) 55%, white) !important
-	--background-floating: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))) 40%, white) !important
-	--background-accent: color-mix(in sRGB, var(--base-color-light, var(--base-color, var(--preset-red))), black 30%) !important
+	--background-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))) 10%, white)
+	--background-secondary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))) 15%, white)
+	--background-secondary-alt: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))) 47%, white)
+	--background-tertiary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))) 55%, white)
+	--background-floating: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))) 40%, white)
+	--background-accent: color-mix(in sRGB, var(--base-color-light, var(--base-color, var(--preset-red))), black 30%)
 	--background-modifier-hover: #00000008
 	--background-modifier-active:  #0002
 	--background-modifier-selected: #0001
@@ -135,6 +136,6 @@
 .theme-light > body > #app-mount *
 	@extend %light-theme
 
-.visual-refresh > body > #app-mount *
+$app-mount *
 	@extend %general
 

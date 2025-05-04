@@ -1,32 +1,32 @@
+@use 'components/_selectors' as *
 @use 'components/_colors'
-@use 'components/_selectors'
 
 .visual-refresh
-	$server-sidebar
+	#{$server-sidebar}
 		margin-bottom: unset !important
-	$server-sidebar-scroller
+	#{$server-sidebar-scroller}
 		padding-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) * 2) !important
 
-	$settings-tabs-sidebar-scroller
+	#{$settings-tabs-sidebar-scroller}
 		background: var(--background-secondary) !important
 
-	$settings-tabs-content-scroller
+	#{$settings-tabs-content-scroller}
 		background-color: unset !important
 
-	$sidebar:after,
+	#{$sidebar}:after,
 	.children__9293f:after
 		display: none !important
 
-	$replying-message-highlight:before
+	#{$replying-message-highlight}:before
 		background: var(--replying-foreground)
 
-	$replying-message-highlight:hover
+	#{$replying-message-highlight}:hover
 		background: var(--background-replying-hover) !important
 
-	$mentioned-message-highlight:hover
+	#{$mentioned-message-highlight}:hover
 		background: var(--background-mentioned-hover) !important
 	
-	$server-sidebar-dm-button
+	#{$server-sidebar-dm-button}
 		--background-surface-higher: var(--background-secondary)
 
 
@@ -42,11 +42,11 @@
 
 // Right popout
 // @media (min-width: 1350px) {
-// 	#{selectors.$userPanelOuter}, // user profile in dms
-// 	#{selectors.$memberListContainer}, // member list
-// 	#{selectors.$nowPlayingColumn}, // friends activity
-// 	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container}::after,
-// 	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container}::before { // empty thing
+// 	#{selectors.#{$userPanelOuter}, // user profile in dms}
+// 	#{selectors.#{$memberListContainer}, // member list}
+// 	#{selectors.#{$nowPlayingColumn}, // friends activity}
+// 	#{selectors.#{$layers} > #{selectors.$layer} > #{selectors.$container}}::after,
+// 	#{selectors.#{$layers} > #{selectors.$layer} > #{selectors.$container}}::before { // empty thing
 // 		position: fixed;
 // 		top: 220px;
 // 		bottom: 85px;
@@ -57,20 +57,20 @@
 // 		height: unset;
 // 	}
 
-// 	#{selectors.$userPanelOuter},
-// 	#{selectors.$userPanelInner}, 
-// 	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container}::after {		
+// 	#{selectors.#{$userPanelOuter},}
+// 	#{selectors.#{$userPanelInner}, }
+// 	#{selectors.#{$layers} > #{selectors.$layer} > #{selectors.$container}}::after {		
 // 		border-radius: var(--border-radius);
 // 	}
 
-// 	#{selectors.$nowPlayingColumn},
-// 	#{selectors.$memberListContainer} {
+// 	#{selectors.#{$nowPlayingColumn},}
+// 	#{selectors.#{$memberListContainer} {}
 // 		top: 280px;
 // 		bottom: 120px;
 // 	}
 
-// 	#{selectors.$nowPlayingColumn},
-// 	#{selectors.$membersWrap} {
+// 	#{selectors.#{$nowPlayingColumn},}
+// 	#{selectors.#{$membersWrap} {}
 // 		// Header
 // 		&::before {
 // 			content: "Member list";
@@ -106,8 +106,8 @@
 // 		}
 // 	}
 
-// 	#{selectors.$nowPlayingColumn} {
-// 		#{selectors.$scroller} {
+// 	#{selectors.#{$nowPlayingColumn} {}
+// 		#{selectors.#{$scroller} {}
 // 			border-left: none;
 // 			margin-left: 0;
 // 		}
@@ -117,20 +117,20 @@
 // 		}
 // 	}
 
-// 	#{selectors.$members} {
+// 	#{selectors.#{$members} {}
 // 		border-radius: var(--border-radius) 0 0;
 // 	}
 
-// 	#{selectors.$tabBody} { // wrapper around friend list in starting screen
+// 	#{selectors.#{$tabBody} { // wrapper around friend list in starting screen}
 // 		transform: none;
 // 	}
 
 // 	// settings
-// 	#{selectors.$layers} > #{selectors.$layer}:nth-child(2) {
+// 	#{selectors.#{$layers} > #{selectors.$layer}}:nth-child(2) {
 // 		margin-right: 450px;
 // 	}
 
-// 	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container} {
+// 	#{selectors.#{$layers} > #{selectors.$layer} > #{selectors.$container} {}
 // 		margin-right: 450px;
 // 		// Basic right popout when there's nothing
 // 		&::after {
@@ -157,14 +157,14 @@
 // 	}
 
 // 	// Adding space for right popout
-// 	#{selectors.$guilds} + :nth-child(2) {
+// 	#{selectors.#{$guilds} + }:nth-child(2) {
 // 		margin-right: 450px;
 // 		border-radius: 0 var(--border-radius) var(--border-radius) 0;
 // 	}
 
 
 // 	// User area
-// 	#{selectors.$panels} > :last-child {
+// 	#{selectors.#{$panels} > }:last-child {
 // 		position: fixed;
 // 		display: flex;
 // 		width: 305px;
@@ -175,7 +175,7 @@
 // 		background-color: var(--background-primary);
 // 		border-radius: var(--border-radius);
 
-// 		#{selectors.$avatarWrapper} {
+// 		#{selectors.#{$avatarWrapper} {}
 // 			border-radius: var(--border-radius);
 // 		}
 // 	}
@@ -185,15 +185,15 @@
 // 		overflow: visible;
 // 	}
 
-// 	#{selectors.$membersWrap} > #{selectors.$members} {
+// 	#{selectors.#{$membersWrap} > #{selectors.$members} {}
 // 		width: 100%;
 // 		background-color: var(--background-primary);
 
-// 		& > #{selectors.$content} {
+// 		& > #{selectors.#{$content} {}
 // 			min-height: 1000px;
 // 			background-color: transparent;
 // 		}
-// 		[role='list'] > div#{selectors.$member} {
+// 		[role='list'] > div#{selectors.#{$member} {}
 // 			max-width: 300px;
 // 			border-radius: var(--border-radius);
 // 			background-color: var(--background-primary);

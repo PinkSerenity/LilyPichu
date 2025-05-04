@@ -1,3 +1,5 @@
+@use '_selectors' as *
+
 %general
 	--bg-overlay-1: var(--background-primary)
 	--bg-overlay-2: var(--background-secondary)
@@ -136,6 +138,6 @@
 .theme-light > body > #app-mount *
 	@extend %light-theme
 
-$app-mount *
+#{$app-mount} *
 	@extend %general
 

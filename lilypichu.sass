@@ -1,33 +1,32 @@
 @use 'components/_selectors' as *
 @use 'components/_colors'
 
-.visual-refresh
-	#{$server-sidebar}
-		margin-bottom: unset !important
-	#{$server-sidebar-scroller}
-		padding-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) * 2) !important
+#{$server-sidebar}
+	margin-bottom: unset !important
+#{$server-sidebar-scroller}
+	padding-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) * 2) !important
 
-	#{$settings-tabs-sidebar-scroller}
-		background: var(--background-secondary) !important
+#{$settings-tabs-sidebar-scroller}
+	background: var(--background-secondary) !important
 
-	#{$settings-tabs-content-scroller}
-		background-color: unset !important
+#{$settings-tabs-content-scroller}
+	background-color: unset !important
 
-	#{$sidebar}:after,
-	.children__9293f:after
-		display: none !important
+#{$sidebar}:after,
+.children__9293f:after
+	display: none !important
 
-	#{$replying-message-highlight}:before
-		background: var(--replying-foreground)
+#{$replying-message-highlight}:before
+	background: var(--replying-foreground)
 
-	#{$replying-message-highlight}:hover
-		background: var(--background-replying-hover) !important
+#{$replying-message-highlight}:hover
+	background: var(--background-replying-hover) !important
 
-	#{$mentioned-message-highlight}:hover
-		background: var(--background-mentioned-hover) !important
-	
-	#{$server-sidebar-dm-button}
-		--background-surface-higher: var(--background-secondary)
+#{$mentioned-message-highlight}:hover
+	background: var(--background-mentioned-hover) !important
+
+#{$server-sidebar-dm-button}
+	--background-surface-higher: var(--background-secondary)
 
 
 // @forward "stuff/chat";

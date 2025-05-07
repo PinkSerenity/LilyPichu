@@ -7,10 +7,10 @@
 	padding-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) * 2) !important
 
 #{$settings-tabs-sidebar-scroller}
-	background: var(--background-secondary) !important
+	background: var(--background-secondary-alt)
 
 #{$settings-tabs-content-scroller}
-	background-color: unset !important
+	background: var(--background-secondary)
 
 #{$sidebar}:after,
 .children__9293f:after
@@ -28,6 +28,19 @@
 #{$server-sidebar-dm-button}
 	--background-surface-higher: var(--background-secondary)
 
+#{$chat-textbox},
+#{$chat-textbox} > div:first-child
+	border-radius: var(--border-radius)
+
+#{$app-mount}
+	--radius-none: 2px;
+    --radius-xs: 14px;
+    --radius-sm: 20px;
+    --radius-md: 26px;
+    --radius-lg: 32px;
+    --radius-xl: 44px;
+    --radius-xxl: 56px;
+    --radius-round: 2147483647px;
 
 // @forward "stuff/chat";
 // @forward "stuff/server-list";

@@ -9,6 +9,9 @@
 #{$settings-tabs-content-scroller}
 	background: var(--background-secondary)
 
+#{$channel-sidebar}
+	border-top-left-radius: var(--radius-sm)
+
 #{$sidebar}:after,
 .children__9293f:after
 	display: none !important
@@ -28,20 +31,20 @@
 #{$chat-textarea},
 #{$chat-textbox},
 #{$user-panel}
-	border-radius: var(--radius-lg)
+	border-radius: var(--radius-md)
 
 #{$chat-reply-container}
-	border-top-left-radius: var(--radius-lg)
-	border-top-right-radius: var(--radius-lg)
+	border-top-left-radius: var(--radius-md)
+	border-top-right-radius: var(--radius-md)
 
 #{$app-mount}
 	--radius-none: round(to-zero, calc(var(--border-radius) / 10 ))
-	--radius-xs: calc(var(--border-radius) * 5 / 6 - 8px / 3 )
+	--radius-xs: calc(var(--border-radius) - 5px )
 	--radius-sm: var(--border-radius)
-	--radius-md: calc(var(--border-radius) * 7 / 6 + 8px / 3 )
-	--radius-lg: calc(var(--border-radius) * 8 / 6 + 16px / 3 )
-	--radius-xl: calc(var(--border-radius) * 10 / 6 + 32px / 3 )
-	--radius-xxl: calc(var(--border-radius) * 12 / 6 + 48px / 3 )
+	--radius-md: calc(var(--border-radius) + 5px )
+	--radius-lg: calc(var(--border-radius) + 10px )
+	--radius-xl: calc(var(--border-radius) + 20px )
+	--radius-xxl: calc(var(--border-radius) + 30px )
 	--radius-round: 2147483647px
 
 #{$server-sidebar-server-icon}

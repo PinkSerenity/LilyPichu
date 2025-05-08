@@ -39,8 +39,17 @@
 	--radius-xxl: 56px
 	--radius-round: 2147483647px
 
-#{$server-sidebar-server-button}
+#{$server-sidebar-server-icon}
 	clip-path: circle()
+
+$server-sidebar-server-badge-position: 2px
+
+#{$server-sidebar-server-badge-mask}
+	transform: translate(-$server-sidebar-server-badge-position, -$server-sidebar-server-badge-position)
+
+#{$server-sidebar-server-badge}
+	right: $server-sidebar-server-badge-position
+	bottom: $server-sidebar-server-badge-position
 
 // @forward "stuff/chat";
 // @forward "stuff/server-list";

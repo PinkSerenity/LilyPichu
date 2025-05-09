@@ -7,7 +7,6 @@
 		"**/cache/": true
 	},
 	"liveSassCompile.settings.formats": [
-    	// This is the default.
 		{
 			"format": "compressed",
 			"extensionName": ".css",
@@ -16,6 +15,7 @@
 			"savePath": "/build"
 		}
 	],
+	"liveSassCompile.settings.autoprefix": true,
 	"liveSassCompile.settings.generateMap": false,
 	"liveSassCompile.settings.showOutputWindowOn": "None",
 	"liveSassCompile.settings.includeItems": [

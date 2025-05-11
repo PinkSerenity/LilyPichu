@@ -21,52 +21,6 @@
 
 
 %dark-theme
-	// Text
-	--text-normal: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), white 80%)
-	--text-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), white 75%)
-	--header-primary: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), white 70%)
-	--interactive-normal: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), #F0F0F0 60%)
-	--channels-default: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), white 80%)
-
-	--text-muted: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), #F0F0F0 70%)
-	--interactive-muted: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), #D8D8D8 50%)
-
-	--header-secondary: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), white 65%)
-	--interactive-hover: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), #D0D0D0 60%)
-	--interactive-active: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), white 75%)
-
-	// Background color
-	--background-primary: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))) 86%, black)
-	--background-secondary: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))) 65%, black)
-	--background-secondary-alt: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))) 53%, black)
-	--background-tertiary: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))) 31%, black)
-	--background-floating: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))) 30%, black)
-	--background-accent: #c5536c
-	--modal-background: var(--background-primary)
-	--background-modifier-hover: #ffffff08
-	--background-modifier-active:  #fff2
-	--background-modifier-selected: #fff1
-	--toast-background: #5e3640
-	--toast-header: #3b1d24
-	--toast-contents: #49292f
-	--toast-border: #49292f
-
-	// Scrollbar
-	--scrollbar-auto-thumb: var(--background-tertiary)
-	--scrollbar-auto-track: var(--background-secondary-alt)
-	--scrollbar-thin-thumb: var(--background-tertiary)
-	--scrollbar-thin-track: transparent
-
-	// Message highlighting
-	--replying-foreground: hsl(from var(--background-primary) calc(h - 90) 100 45)
-	--info-warning-foreground: hsl(from var(--background-primary) calc(h + 51) 100 50)
-	--background-message-highlight: color-mix(in oklab, var(--background-primary), var(--replying-foreground) 20%)
-	--background-mentioned: color-mix(in oklab, var(--background-primary), var(--info-warning-foreground) 15%)
-	--background-replying-hover: color-mix(in oklab, var(--background-message-highlight), #fff 6.25%)
-	--background-mentioned-hover: color-mix(in oklab, var(--background-mentioned), #fff 6.25%)
-
-	// Other
-	--channel-text-area-placeholder: var(--interactive-normal)
 
 	// Preset colors
 	--preset-pink: #632D46
@@ -78,47 +32,56 @@
 	--preset-blue: #1E305B
 	--preset-purple: #472A5E
 
+	*
+		// Text
+		--text-normal: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), white 80%)
+		--text-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), white 75%)
+		--header-primary: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), white 70%)
+		--interactive-normal: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), #F0F0F0 60%)
+		--channels-default: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), white 80%)
+
+		--text-muted: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), #F0F0F0 70%)
+		--interactive-muted: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), #D8D8D8 50%)
+
+		--header-secondary: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), white 65%)
+		--interactive-hover: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), #D0D0D0 60%)
+		--interactive-active: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), white 75%)
+
+		// Background color
+		--background-primary: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))) 86%, black)
+		--background-secondary: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))) 65%, black)
+		--background-secondary-alt: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))) 53%, black)
+		--background-tertiary: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))) 31%, black)
+		--background-floating: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))) 30%, black)
+		--background-accent: #c5536c
+		--modal-background: var(--background-primary)
+		--background-modifier-hover: #ffffff08
+		--background-modifier-active:  #fff2
+		--background-modifier-selected: #fff1
+		--toast-background: #5e3640
+		--toast-header: #3b1d24
+		--toast-contents: #49292f
+		--toast-border: #49292f
+
+		// Scrollbar
+		--scrollbar-auto-thumb: var(--background-tertiary)
+		--scrollbar-auto-track: var(--background-secondary-alt)
+		--scrollbar-thin-thumb: var(--background-tertiary)
+		--scrollbar-thin-track: transparent
+
+		// Message highlighting
+		--replying-foreground: hsl(from var(--background-primary) calc(h - 90) 100 45)
+		--info-warning-foreground: hsl(from var(--background-primary) calc(h + 51) 100 50)
+		--background-message-highlight: color-mix(in oklab, var(--background-primary), var(--replying-foreground) 20%)
+		--background-mentioned: color-mix(in oklab, var(--background-primary), var(--info-warning-foreground) 15%)
+		--background-replying-hover: color-mix(in oklab, var(--background-message-highlight), #fff 6.25%)
+		--background-mentioned-hover: color-mix(in oklab, var(--background-mentioned), #fff 6.25%)
+
+		// Other
+		--channel-text-area-placeholder: var(--interactive-normal)
 
 
 %light-theme
-	// Text
-	--text-normal: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 75%)
-	--text-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #303030 75%)
-	--header-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 60%)
-	--interactive-normal: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 65%)
-	--channels-default: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #303030 60%)
-
-	--text-muted: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #808080 70%)
-	--interactive-muted: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #909090 50%)
-
-	--header-secondary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 50%)
-	--interactive-hover: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 50%)
-	--interactive-active: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #303030 75%)
-
-	// Background color
-	--background-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))) 10%, white)
-	--background-secondary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))) 15%, white)
-	--background-secondary-alt: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))) 47%, white)
-	--background-tertiary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))) 55%, white)
-	--background-floating: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))) 40%, white)
-	--background-accent: color-mix(in sRGB, var(--base-color-light, var(--base-color, var(--preset-red))), black 30%)
-	--background-modifier-hover: #00000008
-	--background-modifier-active:  #0002
-	--background-modifier-selected: #0001
-
-	// Scrollbar
-	--scrollbar-auto-thumb: var(--background-tertiary)
-	--scrollbar-auto-track: var(--background-secondary-alt)
-	--scrollbar-thin-thumb: var(--background-tertiary)
-	--scrollbar-thin-track: transparent
-
-	// Message highlighting
-	--replying-foreground: hsl(from var(--background-primary) calc(h - 90) 100 45)
-	--info-warning-foreground: hsl(from var(--background-primary) calc(h + 51) 100 50)
-	--background-message-highlight: color-mix(in oklab, var(--background-primary), var(--replying-foreground) 15%)
-	--background-mentioned: color-mix(in oklab, var(--background-primary), var(--info-warning-foreground) 15%)
-	--background-replying-hover: color-mix(in oklab, var(--background-message-highlight), #000 6.25%)
-	--background-mentioned-hover: color-mix(in oklab, var(--background-mentioned), #000 6.25%)
 	
 	// Preset colors
 	--preset-pink: #F766A8
@@ -129,6 +92,46 @@
 	--preset-cyan: #41C7C1
 	--preset-blue: #3E64C7
 	--preset-purple: #9050B8
+
+	*
+		// Text
+		--text-normal: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 75%)
+		--text-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #303030 75%)
+		--header-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 60%)
+		--interactive-normal: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 65%)
+		--channels-default: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #303030 60%)
+
+		--text-muted: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #808080 70%)
+		--interactive-muted: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #909090 50%)
+
+		--header-secondary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 50%)
+		--interactive-hover: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 50%)
+		--interactive-active: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #303030 75%)
+
+		// Background color
+		--background-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))) 10%, white)
+		--background-secondary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))) 15%, white)
+		--background-secondary-alt: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))) 47%, white)
+		--background-tertiary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))) 55%, white)
+		--background-floating: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))) 40%, white)
+		--background-accent: color-mix(in sRGB, var(--base-color-light, var(--base-color, var(--preset-red))), black 30%)
+		--background-modifier-hover: #00000008
+		--background-modifier-active:  #0002
+		--background-modifier-selected: #0001
+
+		// Scrollbar
+		--scrollbar-auto-thumb: var(--background-tertiary)
+		--scrollbar-auto-track: var(--background-secondary-alt)
+		--scrollbar-thin-thumb: var(--background-tertiary)
+		--scrollbar-thin-track: transparent
+
+		// Message highlighting
+		--replying-foreground: hsl(from var(--background-primary) calc(h - 90) 100 45)
+		--info-warning-foreground: hsl(from var(--background-primary) calc(h + 51) 100 50)
+		--background-message-highlight: color-mix(in oklab, var(--background-primary), var(--replying-foreground) 15%)
+		--background-mentioned: color-mix(in oklab, var(--background-primary), var(--info-warning-foreground) 15%)
+		--background-replying-hover: color-mix(in oklab, var(--background-message-highlight), #000 6.25%)
+		--background-mentioned-hover: color-mix(in oklab, var(--background-mentioned), #000 6.25%)
 
 
 .theme-dark > body > #app-mount *,

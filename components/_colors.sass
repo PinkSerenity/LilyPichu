@@ -32,7 +32,7 @@
 	--preset-blue: #1E305B
 	--preset-purple: #472A5E
 
-	*
+	body > #app-mount *
 		// Text
 		--text-normal: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), white 80%)
 		--text-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), white 75%)
@@ -93,7 +93,7 @@
 	--preset-blue: #3E64C7
 	--preset-purple: #9050B8
 
-	*
+	body > #app-mount *
 		// Text
 		--text-normal: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 75%)
 		--text-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #303030 75%)
@@ -134,12 +134,12 @@
 		--background-mentioned-hover: color-mix(in oklab, var(--background-mentioned), #000 6.25%)
 
 
-.theme-dark > body > #app-mount,
-.theme-darker > body > #app-mount,
-.theme-midnight > body > #app-mount
+.theme-dark,
+.theme-darker,
+.theme-midnight
 	@extend %dark-theme
 
-.theme-light > body > #app-mount
+.theme-light
 	@extend %light-theme
 
 #{$app-mount} *

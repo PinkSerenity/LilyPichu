@@ -12,17 +12,17 @@
 #{$channel-sidebar}
 	border-top-left-radius: var(--radius-sm)
 
-#{$sidebar}:after,
-.children__9293f:after
+#{$sidebar}::after,
+.children__9293f::after
 	display: none !important
 
-#{$replying-message-highlight}:before
+#{$replying-message-highlight}::before
 	background: var(--replying-foreground)
 
-#{$replying-message-highlight}:hover
+#{$replying-message-highlight}::hover
 	background: var(--background-replying-hover) !important
 
-#{$mentioned-message-highlight}:hover
+#{$mentioned-message-highlight}::hover
 	background: var(--background-mentioned-hover) !important
 
 #{$server-sidebar-dm-button}
@@ -60,6 +60,26 @@ $server-sidebar-server-badge-position: 1px
 	right: $server-sidebar-server-badge-position
 	bottom: $server-sidebar-server-badge-position
 
+#{$server-sidebar}
+	padding: 5px 0px
+
+	@mixin sidebar-scroller-blur($position)
+		content: ""
+		position: absolute
+		#{$position}: 0
+		left: 0
+		right: 0
+		height: 5px
+		pointer-events: none
+		background: linear-gradient(to $position, transparent, var(--background-tertiary))
+		z-index: 1
+
+	&::before
+		@include sidebar-scroller-blur(top)
+
+	&::after
+		@include sidebar-scroller-blur(bottom)
+
 // @forward "stuff/chat";
 // @forward "stuff/server-list";
 // @forward "stuff/channel-list";
@@ -68,7 +88,6 @@ $server-sidebar-server-badge-position: 1px
 // @forward "stuff/settings";
 // @forward "stuff/friends";
 // @forward "stuff/other";
-
 
 // Right popout
 // @media (min-width: 1350px) {
@@ -191,7 +210,6 @@ $server-sidebar-server-badge-position: 1px
 // 		margin-right: 450px;
 // 		border-radius: 0 var(--border-radius) var(--border-radius) 0;
 // 	}
-
 
 // 	// User area
 // 	#{selectors.#{$panels} > }:last-child {

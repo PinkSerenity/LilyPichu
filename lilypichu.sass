@@ -3,8 +3,27 @@
 
 #{$server-sidebar}
 	margin-bottom: unset !important
+
+	@mixin sidebar-scroller-blur($position)
+		content: ""
+		position: absolute
+		#{$position}: 0
+		left: 0
+		right: 0
+		height: 5px
+		pointer-events: none
+		background: linear-gradient(to $position, transparent, var(--background-tertiary))
+		z-index: 1
+
+	&::before
+		@include sidebar-scroller-blur(top)
+
+	&::after
+		@include sidebar-scroller-blur(bottom)
+
 #{$server-sidebar-scroller}
-	padding-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) * 2) !important
+	padding-top: 5px;
+	padding-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) * 2 + 5px) !important
 
 #{$settings-tabs-content-scroller}
 	background: var(--background-secondary)
@@ -58,27 +77,7 @@ $server-sidebar-server-badge-position: 1px
 
 #{$server-sidebar-server-badge}
 	right: $server-sidebar-server-badge-position
-	bottom: $server-sidebar-server-badge-position
-
-#{$server-sidebar}
-	padding: 5px 0px
-
-	@mixin sidebar-scroller-blur($position)
-		content: ""
-		position: absolute
-		#{$position}: 0
-		left: 0
-		right: 0
-		height: 5px
-		pointer-events: none
-		background: linear-gradient(to $position, transparent, var(--background-tertiary))
-		z-index: 1
-
-	&::before
-		@include sidebar-scroller-blur(top)
-
-	&::after
-		@include sidebar-scroller-blur(bottom)
+	bottom: $server-sidebar-server-badge-position	
 
 // @forward "stuff/chat";
 // @forward "stuff/server-list";

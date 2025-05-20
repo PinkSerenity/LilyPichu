@@ -32,7 +32,7 @@
 	--preset-blue: #1E305B
 	--preset-purple: #472A5E
 
-	body > #app-mount *
+	*
 		// Text
 		--text-normal: color-mix(in srgb, var(--base-color-dark, var(--base-color, var(--preset-red))), white 80%)
 		--text-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), white 75%)
@@ -93,7 +93,7 @@
 	--preset-blue: #3E64C7
 	--preset-purple: #9050B8
 
-	body > #app-mount *
+	*
 		// Text
 		--text-normal: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #606060 75%)
 		--text-primary: color-mix(in srgb, var(--base-color-light, var(--base-color, var(--preset-red))), #303030 75%)
@@ -136,10 +136,14 @@
 
 .theme-dark,
 .theme-darker,
-.theme-midnight
+.theme-midnight,
+#{$profile-popup} .theme-dark,
+#{$profile-popup} .theme-darker,
+#{$profile-popup} .theme-midnight
 	@extend %dark-theme
 
-.theme-light
+.theme-light,
+#{$profile-popup} .theme-light
 	@extend %light-theme
 
 #{$app-mount} *

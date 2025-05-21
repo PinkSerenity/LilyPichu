@@ -3,23 +3,23 @@
 
 #{$server-sidebar}
 	margin-bottom: unset !important
+	
+	// @mixin sidebar-scroller-blur($position)
+	// 	content: ""
+	// 	position: absolute
+	// 	#{$position}: 0
+	// 	left: 0
+	// 	right: 0
+	// 	height: 5px
+	// 	pointer-events: none
+	// 	background: linear-gradient(to $position, transparent, var(--background-tertiary))
+	// 	z-index: 1
 
-	@mixin sidebar-scroller-blur($position)
-		content: ""
-		position: absolute
-		#{$position}: 0
-		left: 0
-		right: 0
-		height: 5px
-		pointer-events: none
-		background: linear-gradient(to $position, transparent, var(--background-tertiary))
-		z-index: 1
+	// &::before
+	// 	@include sidebar-scroller-blur(top)
 
-	&::before
-		@include sidebar-scroller-blur(top)
-
-	&::after
-		@include sidebar-scroller-blur(bottom)
+	// &::after
+	// 	@include sidebar-scroller-blur(bottom)
 
 #{$server-sidebar-scroller}
 	padding-top: 5px

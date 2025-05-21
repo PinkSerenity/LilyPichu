@@ -18,7 +18,7 @@
 	"liveSassCompile.settings.autoprefix": true,
 	"liveSassCompile.settings.generateMap": false,
 	"liveSassCompile.settings.showOutputWindowOn": "None",
-	"liveSassCompile.settings.includeItems": [
-		"/lilypichu.sass"
+	"liveSassCompile.settings.excludeList": [
+		"/old/**"
 	]
 }

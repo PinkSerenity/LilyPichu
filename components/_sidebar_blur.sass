@@ -1,0 +1,18 @@
+@use '_selectors' as *
+
+@mixin sidebar-scroller-blur($position)
+	content: ""
+	position: absolute
+	#{$position}: 0
+	left: 0
+	right: 0
+	height: 5px
+	pointer-events: none
+	background: linear-gradient(to $position, transparent, var(--background-tertiary))
+	z-index: 1
+
+#{$server-sidebar}
+	&::before
+		@include sidebar-scroller-blur(top)
+	&::after
+		@include sidebar-scroller-blur(bottom)

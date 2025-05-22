@@ -138,15 +138,17 @@
 
 .theme-dark,
 .theme-darker,
-.theme-midnight,
-#{$profile-popout}.theme-dark,
-#{$profile-popout}.theme-darker,
-#{$profile-popout}.theme-midnight
-	@extend %dark-theme
+.theme-midnight
+	&,
+	&#{$profile-popout},
+	&#{$profile-modal}
+		@extend %dark-theme
 
-.theme-light,
-#{$profile-popout}.theme-light
-	@extend %light-theme
+.theme-light
+	&,
+	&#{$profile-popout},
+	&#{$profile-modal}
+		@extend %light-theme
 
 #{$app-mount} *
 	@extend %general

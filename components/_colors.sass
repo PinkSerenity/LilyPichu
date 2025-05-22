@@ -136,18 +136,18 @@
 		--background-mentioned-hover: color-mix(in oklab, var(--background-mentioned), #000 6.25%)
 
 
-.theme-dark,
-.theme-darker,
-.theme-midnight
-	&,
-	&#{$profile-popout},
-	&#{$profile-modal}
+html,
+#{$profile-popout},
+#{$profile-modal},
+	&.theme-dark,
+	&.theme-darker,
+	&.theme-midnight
 		@extend %dark-theme
 
-.theme-light
-	&,
-	&#{$profile-popout},
-	&#{$profile-modal}
+html,
+#{$profile-popout},
+#{$profile-modal},
+	&.theme-light
 		@extend %light-theme
 
 #{$app-mount} *
